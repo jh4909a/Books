@@ -1,7 +1,5 @@
 ---
 title: "Books I Love"
-author: "Jessica Hoag"
-date: "February 2, 2017"
 output: html_document
 ---
   
@@ -48,7 +46,7 @@ I thought, as one possibility, I would teach you skills for analyzing data from 
 I expect that setting up your computers with the free software needed to connect to twitter and create these word clouds will take most of a class period.  You will do some of it at home.  Once you have the software, you will load the code that created this document press and press one button to regenerate this document with the word cloud below.  On the second day we will learn how and where to change the attached file to create a similar document for your own purposes.
 
 ## Perks of Being a Wallflower
-_Perks of Being a Wallflower_ is a book about a girl who finds out she is the queen of this world.  **In compassion lies beauty**.  Let us resolve to help open the heart of the world, and heal our suffering.
+_Perks of Being a Wallflower_ is NOT a book about a girl who finds out she is the queen of this world.  **In compassion lies beauty**.  Let us resolve to help open the heart of the world, and heal our suffering.
 
 ## Inspirational image.
 ![Beautiful compassion.](Wallflower.jpeg)
