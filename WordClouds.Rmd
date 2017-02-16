@@ -1,59 +1,24 @@
 ---
-title: "Books I Love"
+title: "Perks of Being a Wallflower"
+author: Stephen Chbosky
 output: html_document
 ---
+
   
-  ## Focus on books!
-  
-  This is going to show a word cloud that searches Twitter for words surrounding the book title.
+**“There's nothing like deep breaths after laughing that hard. Nothing in the world like a sore stomach for the right reasons.” **
 
-I am going to search for the book Queen of the Tearling.
-  
-  1. Sampling distributions for counts and proportions.
-2. Confidence intervals.
+― Stephen Chbosky, The Perks Of Being A Wallflower
 
-What else do I sometimes cover?
+![](wallflower.jpeg)
 
-1. Computations with standard deviations of random variables (the rest of homework 17).
-2. T-tests (homework 22).
-3. Use and Abuse of Tests of Significance (homework 22)
-4. Power and Sample-Size (homework 23).
+## Summary
+Charlie is a freshman.
 
-What else could we do that is basic statistics?
+And while he's not the biggest geek in the school, he is by no means popular. Shy, introspective, intelligent beyond his years yet socially awkward, he is a wallflower, caught between trying to live his life and trying to run from it.
 
-1. Analysis of Variance (ANOVA) comes up a lot in studies.  This topic is in the book.
-2. Bayes Rule is important, also in the book.
-3. Two-way tables, Simpson's Paradox, are in the book.
-4. There is more to be said about tests of significance and confidence intervals.
-5. We could also spend time reviewing everything else we have covered.
+Charlie is attempting to navigate his way through uncharted territory: the world of first dates and mix tapes, family dramas and new friends; the world of sex, drugs, and The Rocky Horror Picture Show, when all one requires is that perfect song on that perfect drive to feel infinite. But he can't stay on the sideline forever. Standing on the fringes of life offers a unique perspective. But there comes a time to see what it looks like from the dance floor.
 
-Or we could do something else.  Something involved with data science.
-
-## Discussion
-
-On Monday, I want to discuss where we are headed.
-
-1. What are your ambitions, goals and dreams?
-2. Have your ambitions, goals and dreams changed as a result of last week's election results?
-3. As of last week, should we now be more concerned with engaging productively and helpfully in the world?
-4. What could we do, as a class, that would promote your ambitions, goals, dreams?
-5. What could we do in a few days with basic statistics and/or data science that would help us engage in the world productively and helpfully?  (See below for an idea).
-6. If there is time we might consider this question:  What can we do beyond the classroom to engage in the world productively and helpfully?
-
-## My idea
-I thought, as one possibility, I would teach you skills for analyzing data from the twitter archive.  Understanding our culture, and being able to convey insights to others, may be a needed skill for the world and our nation, right now.  You could spend a career learning how, but what I plan to do will take two class periods.  After two class periods, we can talk about where to go from there.
-
-I expect that setting up your computers with the free software needed to connect to twitter and create these word clouds will take most of a class period.  You will do some of it at home.  Once you have the software, you will load the code that created this document press and press one button to regenerate this document with the word cloud below.  On the second day we will learn how and where to change the attached file to create a similar document for your own purposes.
-
-## Perks of Being a Wallflower
-_Perks of Being a Wallflower_ is NOT a book about a girl who finds out she is the queen of this world.  **In compassion lies beauty**.  Let us resolve to help open the heart of the world, and heal our suffering.
-
-## Inspirational image.
-![Beautiful compassion.](Wallflower.jpeg)
-
-## Word cloud
-Below is a word cloud derived from a sample of 500 recent tweets that include the words "Queen of the Tearling" taken from the twitter archive.  I restricted the search to tweets posted in the month prior to November 8, 2016, election day, and from within 10 miles of the American Univerisity campus.
-
+The Perks of Being a Wallflower is a deeply affecting coming-of-age story that will spirit you back to those wild and poignant roller-coaster days known as growing up.
 
 ```{r thewordcloud, results='hide', echo=FALSE, message=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
@@ -68,16 +33,21 @@ until <- '2016-11-08'  # INSERT Until Date, not used here
 ##### EDIT SEARCH PARAMETERS ABOVE
 
 # NEXT 4 LINES LOAD LIBRARIES OF FUNCTIONS
+
+consumer_key <- "qOvNAzHxL7i8R1AajYJZumw5M"
+consumer_secret <- "1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt"
+access_token <- "3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L"
+access_secret <- "KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9"
+
 library(twitteR)
+setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
+
 library(tm)
 library(wordcloud)
 library(RColorBrewer)
 
-# NEXT LINE AUTHENTICATES SESSION WITH TWITTER
-source("my_access.R")
-
 ####### EDIT THE NEXT LINE TO SPECIFY SEARCH
-tweets_raw = searchTwitter(search_term, 
+tweets_raw = searchTwitter(search_term,
                            n=sample_size,
                            #geocode=AU_geocode,
                            #since=since,
@@ -90,7 +60,7 @@ tweets_text = sapply(tweets_raw, function(x) x$getText())
 tweets_corpus = Corpus(VectorSource(tweets_text))
 
 # NEXT LINE REMOVES SPECIAL CHARACTERS AVAILABLE IN OTHER LANGUAGES
-tweets_transformed1 <- tm_map(tweets_corpus, 
+tweets_transformed1 <- tm_map(tweets_corpus,
                               content_transformer(function(x) iconv(x, to="UTF-8-MAC")),
                               mc.cores=1)
 
@@ -110,11 +80,47 @@ tweets_transformed4 <- tm_map(tweets_transformed3,
 tweets_transformed5 <- tm_map(tweets_transformed4,
                               function(x) removeWords(x,"http[^[:space:]]*"),mc.cores=1)
 
-                              
+
 ###### EDIT NEXT LINE TO SPECIFY DRAWING OF WORD CLOUD
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
-## Code
+##Recent Tweets
+``` {r Tweets}
 
-Attached below is the code used to generate this document.  It contains text, markup, and code for connecting with twitter, downloading a sample of tweets, and creating the word cloud.
+# Run Twitter Search
+
+tweets <- searchTwitter("Perks Wallflower", n=500, lang="en")
+
+#Transform tweets list into a data frame
+tweets.df <- twListToDF(tweets)
+
+head(tweets.df, 10)
+```
+
+##Key Themes
+* bookstomovies
+* triggerwarning
+* firstlove
+* comingofage
+
+##Extras
+* Also a major motion picture starring Logan Lerman and Emma Watson
+* A #1 New York Times best seller for more than a year
+* An American Library Association Best Book for Young Adults (2000) 
+* Best Book for Reluctant Readers (2000)
+
+##Where to Buy
+https://www.amazon.com/Perks-Being-Wallflower-Stephen-Chbosky/dp/1451696191/ref=sr_1_1?s=books&ie=UTF8&qid=1487100122&sr=1-1&keywords=perks+of+being+a+wallflower
+
+http://www.barnesandnoble.com/w/perks-of-being-a-wallflower-stephen-chbosky/1100365675?ean=9781451696196#productInfoTabs
+
+
+
+<small> <small>  
+
+* summary from Goodreads 
+
+* extras from Barnes & Noble
+
+\small \small
