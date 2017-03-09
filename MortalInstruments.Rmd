@@ -1,33 +1,33 @@
 ---
-title: "Perks of Being a Wallflower"
+title: "City of Bones"
 output: 
   html_document:
-    theme: "yeti"
+    theme: "flatly"
 ---
 
-Author: Stephen Chbosky
-  
-**“There's nothing like deep breaths after laughing that hard. Nothing in the world like a sore stomach for the right reasons.” **
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Author: Cassandra Clare
 
-― Stephen Chbosky, The Perks Of Being A Wallflower
+**“Sarcasm is the last refuge of the imaginatively bankrupt.”**
 
-![](wallflower.jpeg)
+― Cassandra Clare, City of Bones
+
+![](cityofbones.jpeg)
 
 ## Summary
-Charlie is a freshman.
+When fifteen-year-old Clary Fray heads out to the Pandemonium Club in New York City, she hardly expects to witness a murder― much less a murder committed by three teenagers covered with strange tattoos and brandishing bizarre weapons. Then the body disappears into thin air. It's hard to call the police when the murderers are invisible to everyone else and when there is nothing―not even a smear of blood―to show that a boy has died. Or was he a boy?
 
-And while he's not the biggest geek in the school, he is by no means popular. Shy, introspective, intelligent beyond his years yet socially awkward, he is a wallflower, caught between trying to live his life and trying to run from it.
+This is Clary's first meeting with the Shadowhunters, warriors dedicated to ridding the earth of demons. It's also her first encounter with Jace, a Shadowhunter who looks a little like an angel and acts a lot like a jerk. Within twenty-four hours Clary is pulled into Jace's world with a vengeance, when her mother disappears and Clary herself is attacked by a demon. But why would demons be interested in ordinary mundanes like Clary and her mother? And how did Clary suddenly get the Sight? The Shadowhunters would like to know... 
 
-Charlie is attempting to navigate his way through uncharted territory: the world of first dates and mix tapes, family dramas and new friends; the world of sex, drugs, and The Rocky Horror Picture Show, when all one requires is that perfect song on that perfect drive to feel infinite. But he can't stay on the sideline forever. Standing on the fringes of life offers a unique perspective. But there comes a time to see what it looks like from the dance floor.
+Exotic and gritty, exhilarating and utterly gripping, Cassandra Clare's ferociously entertaining fantasy takes readers on a wild ride that they will never want to end.
 
-The Perks of Being a Wallflower is a deeply affecting coming-of-age story that will spirit you back to those wild and poignant roller-coaster days known as growing up.
-
-```{r thewordcloud, results='hide', echo=FALSE, message=FALSE}
+```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
-search_term <- "Perks+Wallflower"  # For two terms use e.g. "Perks+Wallflower"
-# For hashtags use e.g. "#Perks+Wallflower"
+search_term <- "City of Bones"
 language <- "en"
-sample_size <- 3200
+sample_size <- 3200 
 AU_geocode <- '38.9375300,-77.0868600,10mi'  # Latitude, Longitude, Radius
 # Here specifies 10 miles from AU campus
 since <- '2016-10-08'  # Election Day
@@ -35,7 +35,6 @@ until <- '2016-11-08'  # INSERT Until Date, not used here
 ##### EDIT SEARCH PARAMETERS ABOVE
 
 # NEXT 4 LINES LOAD LIBRARIES OF FUNCTIONS
-
 consumer_key <- "qOvNAzHxL7i8R1AajYJZumw5M"
 consumer_secret <- "1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt"
 access_token <- "3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L"
@@ -43,7 +42,6 @@ access_secret <- "KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9"
 
 library(twitteR)
 setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
-
 library(tm)
 library(wordcloud)
 library(RColorBrewer)
@@ -88,42 +86,30 @@ tweets_transformed5 <- tm_map(tweets_transformed4,
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
-##Recent Tweets
-``` {r Tweets}
+
+``` {r Tweets, message='false'}
 
 # Run Twitter Search
 
-tweets <- searchTwitter("Perks Wallflower", n=500, lang="en")
+tweets <- searchTwitter("City of Bones", n=500, lang="en")
 
-#Transform tweets list into a data frame
-tweets.df <- twListToDF(tweets)
-
-head(tweets.df, 10)
+head(tweets, 20)
 ```
 
-##Key Themes
-* bookstomovies
-* triggerwarning
-* firstlove
-* comingofage
 
-##Extras
-* Also a major motion picture starring Logan Lerman and Emma Watson
-* A #1 New York Times best seller for more than a year
-* An American Library Association Best Book for Young Adults (2000) 
-* Best Book for Reluctant Readers (2000)
+##Key Themes
+* fightingdemons
+* urban
+* bookstomovies
 
 ##Where to Buy
-https://www.amazon.com/Perks-Being-Wallflower-Stephen-Chbosky/dp/1451696191/ref=sr_1_1?s=books&ie=UTF8&qid=1487100122&sr=1-1&keywords=perks+of+being+a+wallflower
+https://www.amazon.com/Bones-Mortal-Instruments-Cassandra-Clare/dp/1481455923
 
-http://www.barnesandnoble.com/w/perks-of-being-a-wallflower-stephen-chbosky/1100365675?ean=9781451696196#productInfoTabs
+http://www.barnesandnoble.com/w/city-of-bones-cassandra-clare/1100329400
 
-
-
+***
 <small> <small>  
 
-* summary from Goodreads 
-
-* extras from Barnes & Noble
+summary from Goodreads 
 
 \small \small

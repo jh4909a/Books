@@ -1,13 +1,14 @@
 ---
 title: "Queen of the Tearling"
-author: Erika Johansen
-output: html_document
+output: 
+  html_document:
+    theme: "cerulean"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+Author: Erika Johansen
 **“You think of beauty only as a blessing, Majesty, but it brings its own punishments.”**
 
 ― Erika Johansen, Queen of the Tearling
@@ -30,7 +31,7 @@ Kelsea's quest to save her kingdom and meet her destiny has only just begun. Rid
 search_term <- "Queen+Tearling"  # For two terms use e.g. "Queen+Tearling"
 # For hashtags use e.g. "#Queen+Tearling"
 language <- "en"
-sample_size <- 500
+sample_size <- 3200
 AU_geocode <- '38.9375300,-77.0868600,10mi'  # Latitude, Longitude, Radius
 # Here specifies 10 miles from AU campus
 since <- '2016-10-08'  # Election Day
@@ -48,6 +49,7 @@ setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
 library(tm)
 library(wordcloud)
 library(RColorBrewer)
+library(twitteR)
 
 ####### EDIT THE NEXT LINE TO SPECIFY SEARCH
 tweets_raw = searchTwitter(search_term,
@@ -86,6 +88,15 @@ tweets_transformed5 <- tm_map(tweets_transformed4,
 
 ###### EDIT NEXT LINE TO SPECIFY DRAWING OF WORD CLOUD
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
+```
+
+``` {r Tweets, message='false'}
+
+# Run Twitter Search
+
+tweets <- searchTwitter("Queen+Tearling", n=500, lang="en")
+
+head(tweets, 20)
 ```
 
 ##Key Themes

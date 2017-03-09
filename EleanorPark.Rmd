@@ -1,33 +1,37 @@
 ---
-title: "Perks of Being a Wallflower"
+title: "Eleanor & Park"
 output: 
   html_document:
-    theme: "yeti"
+    theme: "spacelab"
 ---
 
-Author: Stephen Chbosky
-  
-**“There's nothing like deep breaths after laughing that hard. Nothing in the world like a sore stomach for the right reasons.” **
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Author: Rainbow Rowell
 
-― Stephen Chbosky, The Perks Of Being A Wallflower
+**“What are the chances you’d ever meet someone like that? he wondered. Someone you could love forever, someone who would forever love you back? And what did you do when that person was born half a world away? The math seemed impossible.”** 
 
-![](wallflower.jpeg)
+― Rainbow Rowell, Eleanor & Park
+
+![](eleanorpark.jpeg)
 
 ## Summary
-Charlie is a freshman.
+Two misfits.
+One extraordinary love.
 
-And while he's not the biggest geek in the school, he is by no means popular. Shy, introspective, intelligent beyond his years yet socially awkward, he is a wallflower, caught between trying to live his life and trying to run from it.
+Eleanor... Red hair, wrong clothes. Standing behind him until he turns his head. Lying beside him until he wakes up. Making everyone else seem drabber and flatter and never good enough...Eleanor.
 
-Charlie is attempting to navigate his way through uncharted territory: the world of first dates and mix tapes, family dramas and new friends; the world of sex, drugs, and The Rocky Horror Picture Show, when all one requires is that perfect song on that perfect drive to feel infinite. But he can't stay on the sideline forever. Standing on the fringes of life offers a unique perspective. But there comes a time to see what it looks like from the dance floor.
+Park... He knows she'll love a song before he plays it for her. He laughs at her jokes before she ever gets to the punch line. There's a place on his chest, just below his throat, that makes her want to keep promises...Park.
 
-The Perks of Being a Wallflower is a deeply affecting coming-of-age story that will spirit you back to those wild and poignant roller-coaster days known as growing up.
+Set over the course of one school year, this is the story of two star-crossed sixteen-year-olds—smart enough to know that first love almost never lasts, but brave and desperate enough to try.
 
-```{r thewordcloud, results='hide', echo=FALSE, message=FALSE}
+```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
-search_term <- "Perks+Wallflower"  # For two terms use e.g. "Perks+Wallflower"
-# For hashtags use e.g. "#Perks+Wallflower"
+search_term <- "eleanor & park"  # For two terms use e.g. "eleanor+park"
+# For hashtags use e.g. "#eleanor+park"
 language <- "en"
-sample_size <- 3200
+sample_size <- 3200 
 AU_geocode <- '38.9375300,-77.0868600,10mi'  # Latitude, Longitude, Radius
 # Here specifies 10 miles from AU campus
 since <- '2016-10-08'  # Election Day
@@ -35,7 +39,6 @@ until <- '2016-11-08'  # INSERT Until Date, not used here
 ##### EDIT SEARCH PARAMETERS ABOVE
 
 # NEXT 4 LINES LOAD LIBRARIES OF FUNCTIONS
-
 consumer_key <- "qOvNAzHxL7i8R1AajYJZumw5M"
 consumer_secret <- "1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt"
 access_token <- "3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L"
@@ -43,7 +46,6 @@ access_secret <- "KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9"
 
 library(twitteR)
 setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
-
 library(tm)
 library(wordcloud)
 library(RColorBrewer)
@@ -88,42 +90,40 @@ tweets_transformed5 <- tm_map(tweets_transformed4,
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
-##Recent Tweets
-``` {r Tweets}
+
+``` {r Tweets, message='false'}
 
 # Run Twitter Search
 
-tweets <- searchTwitter("Perks Wallflower", n=500, lang="en")
+tweets <- searchTwitter("Eleanor & Park", n=500, lang="en")
 
-#Transform tweets list into a data frame
-tweets.df <- twListToDF(tweets)
-
-head(tweets.df, 10)
+head(tweets, 20)
 ```
 
+
 ##Key Themes
-* bookstomovies
-* triggerwarning
 * firstlove
-* comingofage
+* outcasts
 
 ##Extras
-* Also a major motion picture starring Logan Lerman and Emma Watson
-* A #1 New York Times best seller for more than a year
-* An American Library Association Best Book for Young Adults (2000) 
-* Best Book for Reluctant Readers (2000)
+* A New York Times Best Seller!
+* A 2014 Michael L. Printz Honor Book for Excellence in Young Adult Literature
+* Eleanor & Park is the winner of the 2013 Boston Globe Horn Book Award for Best Fiction Book. 
+* A Publishers Weekly Best Children's Book of 2013 
+* A New York Times Book Review Notable Children's Book of 2013
+* A Kirkus Reviews Best Teen Book of 2013
+* An NPR Best Book of 2013
 
 ##Where to Buy
-https://www.amazon.com/Perks-Being-Wallflower-Stephen-Chbosky/dp/1451696191/ref=sr_1_1?s=books&ie=UTF8&qid=1487100122&sr=1-1&keywords=perks+of+being+a+wallflower
+https://www.amazon.com/Eleanor-Park-Rainbow-Rowell/dp/1250012570
 
-http://www.barnesandnoble.com/w/perks-of-being-a-wallflower-stephen-chbosky/1100365675?ean=9781451696196#productInfoTabs
+http://www.barnesandnoble.com/w/eleanor-park-rainbow-rowell/1110274728
 
-
-
+***
 <small> <small>  
 
-* summary from Goodreads 
+summary from Goodreads 
 
-* extras from Barnes & Noble
+extras from Barnes & Noble
 
 \small \small

@@ -1,0 +1,22 @@
+---
+title: "EleanorParkTweets"
+output: html_document
+---
+
+##retrieve tweets from Twitter
+library(twitteR)
+library(ROAuth)
+## Twitter authentication
+consumer_key <- "qOvNAzHxL7i8R1AajYJZumw5M"
+consumer_secret <- "1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt"
+access_token <- "3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L"
+access_secret <- "KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9"
+setup_twitter_oauth(consumer_key, consumer_secret, access_token,
+access_secret)
+## 3200 is the maximum to retrieve
+tweets <- userTimeline("Eleanor & Park", n = 3200, lang="en")
+#Transform tweets list into a data frame
+tweets.df <- twListToDF(tweets)
+
+tweets.df[3200, c("id", "created", "screenName", "replyToSN",
+"favoriteCount", "retweetCount", "longitude", "latitude", "text")]
