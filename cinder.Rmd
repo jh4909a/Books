@@ -67,20 +67,20 @@ tweets_corpus = Corpus(VectorSource(tweets_text))
 
 # NEXT LINE REMOVES SPECIAL CHARACTERS AVAILABLE IN OTHER LANGUAGES
 tweets_transformed1 <- tm_map(tweets_corpus,
-                              content_transformer(function(x) iconv(x, to="UTF-8")))
+                              content_transformer(function(x) iconv(x, to="UTF-8-MAC")), mc.cores=1)
 
 # NEXT LINE CONVERTS EVERYTHING TO LOWER CASE
 tweets_transformed2 <- tm_map(tweets_transformed1,
-                              content_transformer(tolower))
+                              content_transformer(tolower), mc.cores=1)
 # NEXT LINE REMOVES PUNCTUATION
 tweets_transformed3 <- tm_map(tweets_transformed2,
-                              removePunctuation)
+                              removePunctuation, mc.cores=1)
 # NEXT LINE REMOVES "STOPWORDS" LIKE "THE", "AN", "IS", "BE", ETC.
 tweets_transformed4 <- tm_map(tweets_transformed3,
-                              function(x) removeWords(x,stopwords()))
+                              function(x) removeWords(x,stopwords()), mc.cores=1)
 # NEXT LINE REMOVES words starting with "https"
 tweets_transformed5 <- tm_map(tweets_transformed4,
-                              function(x) removeWords(x,"http[^[:space:]]*"))
+                              function(x) removeWords(x,"http[^[:space:]]*"), mc.cores=1)
 
 
 ###### EDIT NEXT LINE TO SPECIFY DRAWING OF WORD CLOUD

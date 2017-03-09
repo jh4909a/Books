@@ -11,11 +11,11 @@
 
 
 
-<title>Upcoming</title>
+<title>EleanorParkTweets</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -98,34 +98,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 60px;
+  padding-top: 51px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 
 .section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 </style>
 
@@ -223,15 +223,16 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Upcoming</h1>
+<h1 class="title toc-ignore">EleanorParkTweets</h1>
 
 </div>
 
 
-<ul>
-<li>A Monster Calls</li>
-<li>Coraline</li>
-</ul>
+<div id="retrieve-tweets-from-twitter" class="section level2">
+<h2>retrieve tweets from Twitter</h2>
+<p>library(twitteR) library(ROAuth) ## Twitter authentication consumer_key &lt;- “qOvNAzHxL7i8R1AajYJZumw5M” consumer_secret &lt;- “1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt” access_token &lt;- “3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L” access_secret &lt;- “KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9” setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret) ## 3200 is the maximum to retrieve tweets &lt;- userTimeline(“Eleanor &amp; Park”, n = 3200, lang=“en”) #Transform tweets list into a data frame tweets.df &lt;- twListToDF(tweets)</p>
+<p>tweets.df[3200, c(“id”, “created”, “screenName”, “replyToSN”, “favoriteCount”, “retweetCount”, “longitude”, “latitude”, “text”)]</p>
+</div>
 
 
 
