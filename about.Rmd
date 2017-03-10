@@ -1,5 +1,5 @@
 ---
-title: "About This Website"
+title: "About <b>It's a Metaphor</b>"
 ---
 
 ``` {r test}
