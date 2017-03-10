@@ -26,7 +26,7 @@ Park... He knows she'll love a song before he plays it for her. He laughs at her
 
 Set over the course of one school year, this is the story of two star-crossed sixteen-year-olds—smart enough to know that first love almost never lasts, but brave and desperate enough to try.
 
-```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE}
+```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
 search_term <- "eleanor & park"  # For two terms use e.g. "eleanor+park"
 # For hashtags use e.g. "#eleanor+park"
@@ -91,7 +91,7 @@ wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
 
-``` {r Tweets, message='false', warning=FALSE, echo=FALSE}
+``` {r Tweets, message=FALSE, warning=FALSE, echo=FALSE, error=FALSE}
 
 # Run Twitter Search
 

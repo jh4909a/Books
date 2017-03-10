@@ -23,7 +23,7 @@ This is Clary's first meeting with the Shadowhunters, warriors dedicated to ridd
 
 Exotic and gritty, exhilarating and utterly gripping, Cassandra Clare's ferociously entertaining fantasy takes readers on a wild ride that they will never want to end.
 
-```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE}
+```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
 search_term <- "City of Bones"
 language <- "en"
@@ -87,7 +87,7 @@ wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
 
-``` {r Tweets, message='false', warning=FALSE, echo=FALSE}
+``` {r Tweets, message=FALSE, warning=FALSE, echo=FALSE, error=FALSE}
 
 # Run Twitter Search
 

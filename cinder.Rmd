@@ -88,7 +88,7 @@ wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
 
-``` {r Tweets, message='false', echo=FALSE, warning=FALSE}
+``` {r Tweets, message=FALSE, echo=FALSE, warning=FALSE}
 
 # Run Twitter Search
 
