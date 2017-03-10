@@ -2,4 +2,7 @@
 title: "About This Website"
 ---
 
-More about this website.
+``` {r test}
+print("<b>cinder</b> book")
+
+```
