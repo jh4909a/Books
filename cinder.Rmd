@@ -52,6 +52,7 @@ library(tm)
 library(wordcloud)
 library(RColorBrewer)
 
+
 ####### EDIT THE NEXT LINE TO SPECIFY SEARCH
 tweets_raw = searchTwitter(search_term,
                            n=sample_size,
