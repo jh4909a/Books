@@ -3,5 +3,5 @@ title: "About <b>It's a Metaphor</b>"
 ---
 
 ``` {r test, results='asis'}
-print("<html><b>cinder</b> book</html>")
+print("<b>cinder</b> book")
 ```
