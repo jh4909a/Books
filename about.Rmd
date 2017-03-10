@@ -2,6 +2,8 @@
 title: "About <b>It's a Metaphor</b>"
 ---
 
+<b>cinder</b> book
+
 ``` {r test}
 print("<html><b>cinder</b> book</html>")
 ```
