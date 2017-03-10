@@ -23,7 +23,7 @@ Although eager to impress the prince, Cinder's intentions are derailed when her 
 
 But it doesn't take long for the scientists to discover something unusual about their new guinea pig. Something others would kill for. 
 
-```{r Twitter Auto, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+```{r Twitter Auto, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 library(twitteR)
 library(httr)
 
