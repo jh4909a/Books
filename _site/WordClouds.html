@@ -245,69 +245,61 @@ $(document).ready(function () {
 </div>
 <div id="recent-tweets" class="section level2">
 <h2>Recent Tweets</h2>
-<pre class="r"><code># Run Twitter Search
-
-tweets &lt;- searchTwitter(&quot;Perks Wallflower&quot;, n=500, lang=&quot;en&quot;)</code></pre>
-<pre><code>## [1] &quot;Rate limited .... blocking for a minute and retrying up to 119 times ...&quot;</code></pre>
-<pre class="r"><code>#Transform tweets list into a data frame
-tweets.df &lt;- twListToDF(tweets)
-
-head(tweets.df, 10)</code></pre>
 <pre><code>##                                                                                                                                            text
 ## 1  RT @fiImart: Charlie&#39;s last letter / the tunnel scene from The Perks of Being a Wallflower (2012) makes me cry every single time https://t.…
-## 2  RT @fiImart: Charlie&#39;s last letter / the tunnel scene from The Perks of Being a Wallflower (2012) makes me cry every single time https://t.…
-## 3  RT @fiImart: Charlie&#39;s last letter / the tunnel scene from The Perks of Being a Wallflower (2012) makes me cry every single time https://t.…
-## 4                                                              i am watching the perks of being a wallflower AND doing academics, will you ever
-## 5               im playing perks of being a wallflower again\nand now im watching it im like.....\nwhat if charlie and patrick had a real fling
-## 6  RT @fiImart: Charlie&#39;s last letter / the tunnel scene from The Perks of Being a Wallflower (2012) makes me cry every single time https://t.…
-## 7            You can’t just sit there and put everybody’s lives ahead of yours and think that counts as love. - The Perks of Being a Wallflower
-## 8  RT @syIphe: “Things change. And friends leave. Life doesn&#39;t stop for anybody.” The Perks of Being a Wallflower (2012) https://t.co/6PEvajur…
-## 9  RT @fiImart: Charlie&#39;s last letter / the tunnel scene from The Perks of Being a Wallflower (2012) makes me cry every single time https://t.…
-## 10                                                               Just wanna be cuddled up with someone watching The Perks of Being a Wallflower
-##    favorited favoriteCount replyToSN             created truncated
-## 1      FALSE             0      &lt;NA&gt; 2017-03-09 03:02:15     FALSE
-## 2      FALSE             0      &lt;NA&gt; 2017-03-09 03:01:51     FALSE
-## 3      FALSE             0      &lt;NA&gt; 2017-03-09 03:01:37     FALSE
-## 4      FALSE             0      &lt;NA&gt; 2017-03-09 03:01:25     FALSE
-## 5      FALSE             0      &lt;NA&gt; 2017-03-09 03:01:02     FALSE
-## 6      FALSE             0      &lt;NA&gt; 2017-03-09 03:00:42     FALSE
-## 7      FALSE             0      &lt;NA&gt; 2017-03-09 03:00:29     FALSE
-## 8      FALSE             0      &lt;NA&gt; 2017-03-09 03:00:18     FALSE
-## 9      FALSE             0      &lt;NA&gt; 2017-03-09 02:59:38     FALSE
-## 10     FALSE             0      &lt;NA&gt; 2017-03-09 02:59:30     FALSE
-##    replyToSID                 id replyToUID
-## 1        &lt;NA&gt; 839672654764331009       &lt;NA&gt;
-## 2        &lt;NA&gt; 839672553392259073       &lt;NA&gt;
-## 3        &lt;NA&gt; 839672493048758272       &lt;NA&gt;
-## 4        &lt;NA&gt; 839672442364682241       &lt;NA&gt;
-## 5        &lt;NA&gt; 839672345455316993       &lt;NA&gt;
-## 6        &lt;NA&gt; 839672261951041537       &lt;NA&gt;
-## 7        &lt;NA&gt; 839672209920573440       &lt;NA&gt;
-## 8        &lt;NA&gt; 839672163691032577       &lt;NA&gt;
-## 9        &lt;NA&gt; 839671992617881602       &lt;NA&gt;
-## 10       &lt;NA&gt; 839671961831653376       &lt;NA&gt;
+## 2                                                                RT @AestheticClips: Perks of Being a Wallflower • 2012 https://t.co/LrpSt2Q1nQ
+## 3                                                                                             @Kelly_McGrath Perks of Being a Wallflower. You!?
+## 4                                                                RT @AestheticClips: Perks of Being a Wallflower • 2012 https://t.co/LrpSt2Q1nQ
+## 5                                                                RT @AestheticClips: Perks of Being a Wallflower • 2012 https://t.co/LrpSt2Q1nQ
+## 6                                                                            RT @filmhaven: Perks of Being A Wallflower https://t.co/rjnQyzrxyE
+## 7  RT @fiImart: Charlie&#39;s last letter / the tunnel scene from The Perks of Being a Wallflower (2012) makes me cry every single time https://t.…
+## 8                                                                RT @AestheticClips: Perks of Being a Wallflower • 2012 https://t.co/LrpSt2Q1nQ
+## 9                                                                RT @moviepoets: The Perks of Being A Wallflower (2012) https://t.co/jUpnIDGNy9
+## 10                                                               RT @moviepoets: The Perks of Being A Wallflower (2012) https://t.co/YR3W227lLZ
+##    favorited favoriteCount     replyToSN             created truncated
+## 1      FALSE             0          &lt;NA&gt; 2017-03-10 16:46:23     FALSE
+## 2      FALSE             0          &lt;NA&gt; 2017-03-10 16:45:55     FALSE
+## 3      FALSE             0 Kelly_McGrath 2017-03-10 16:45:54     FALSE
+## 4      FALSE             0          &lt;NA&gt; 2017-03-10 16:45:43     FALSE
+## 5      FALSE             0          &lt;NA&gt; 2017-03-10 16:45:10     FALSE
+## 6      FALSE             0          &lt;NA&gt; 2017-03-10 16:45:10     FALSE
+## 7      FALSE             0          &lt;NA&gt; 2017-03-10 16:44:52     FALSE
+## 8      FALSE             0          &lt;NA&gt; 2017-03-10 16:44:39     FALSE
+## 9      FALSE             0          &lt;NA&gt; 2017-03-10 16:44:21     FALSE
+## 10     FALSE             0          &lt;NA&gt; 2017-03-10 16:44:09     FALSE
+##            replyToSID                 id replyToUID
+## 1                &lt;NA&gt; 840242439017369604       &lt;NA&gt;
+## 2                &lt;NA&gt; 840242323426537472       &lt;NA&gt;
+## 3  840241434712276992 840242317437087745   23379345
+## 4                &lt;NA&gt; 840242272226672640       &lt;NA&gt;
+## 5                &lt;NA&gt; 840242135240736768       &lt;NA&gt;
+## 6                &lt;NA&gt; 840242132975800321       &lt;NA&gt;
+## 7                &lt;NA&gt; 840242060145893376       &lt;NA&gt;
+## 8                &lt;NA&gt; 840242005724798976       &lt;NA&gt;
+## 9                &lt;NA&gt; 840241928323117056       &lt;NA&gt;
+## 10               &lt;NA&gt; 840241879220408321       &lt;NA&gt;
 ##                                                                            statusSource
-## 1  &lt;a href=&quot;http://twitter.com/download/android&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;
-## 2    &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
-## 3    &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
-## 4                    &lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter Web Client&lt;/a&gt;
-## 5                    &lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter Web Client&lt;/a&gt;
+## 1    &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
+## 2                    &lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter Web Client&lt;/a&gt;
+## 3                    &lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter Web Client&lt;/a&gt;
+## 4    &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
+## 5    &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
 ## 6  &lt;a href=&quot;http://twitter.com/download/android&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;
-## 7                    &lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter Web Client&lt;/a&gt;
+## 7  &lt;a href=&quot;http://twitter.com/download/android&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;
 ## 8    &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
-## 9   &lt;a href=&quot;https://about.twitter.com/products/tweetdeck&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;
+## 9    &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
 ## 10   &lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;
 ##       screenName retweetCount isRetweet retweeted longitude latitude
-## 1   gabriellercm        12237      TRUE     FALSE        NA       NA
-## 2   maddydaviss_        12237      TRUE     FALSE        NA       NA
-## 3      destrxyan        12237      TRUE     FALSE        NA       NA
-## 4   oddwanderess            0     FALSE     FALSE        NA       NA
-## 5   enchu_ebooks            0     FALSE     FALSE        NA       NA
-## 6  rocioleanez18        12237      TRUE     FALSE        NA       NA
-## 7    CookieHan77            0     FALSE     FALSE        NA       NA
-## 8  thewaIIflower          737      TRUE     FALSE        NA       NA
-## 9  Blackedpoetry        12237      TRUE     FALSE        NA       NA
-## 10 _kristynrenee            0     FALSE     FALSE        NA       NA</code></pre>
+## 1   thewarscivil        13182      TRUE     FALSE        NA       NA
+## 2      dalaila28          364      TRUE     FALSE        NA       NA
+## 3       jdosmith            0     FALSE     FALSE        NA       NA
+## 4  Gucci_Eyelids          364      TRUE     FALSE        NA       NA
+## 5     trippyteaa          364      TRUE     FALSE        NA       NA
+## 6     tracer1997         1866      TRUE     FALSE        NA       NA
+## 7     weedofbrad        13182      TRUE     FALSE        NA       NA
+## 8   savannahgc44          364      TRUE     FALSE        NA       NA
+## 9     stilinskwz         1155      TRUE     FALSE        NA       NA
+## 10     lexialm13         1700      TRUE     FALSE        NA       NA</code></pre>
 </div>
 <div id="key-themes" class="section level2">
 <h2>Key Themes</h2>

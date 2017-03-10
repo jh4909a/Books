@@ -242,70 +242,65 @@ $(document).ready(function () {
 <p>Park… He knows she’ll love a song before he plays it for her. He laughs at her jokes before she ever gets to the punch line. There’s a place on his chest, just below his throat, that makes her want to keep promises…Park.</p>
 <p>Set over the course of one school year, this is the story of two star-crossed sixteen-year-olds—smart enough to know that first love almost never lasts, but brave and desperate enough to try.</p>
 <p><img src="EleanorPark_files/figure-html/thewordcloud-1.png" width="672" /></p>
-<pre class="r"><code># Run Twitter Search
-
-tweets &lt;- searchTwitter(&quot;Eleanor &amp; Park&quot;, n=500, lang=&quot;en&quot;)
-
-head(tweets, 20)</code></pre>
 <pre><code>## [[1]]
-## [1] &quot;Totem_Soul: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;SAAVlK: RT @floatyseathing: So I wrote a letter to @rainbowrowell about Park from Eleanor and Park https://t.co/hCLhRpxtO9&quot;
 ## 
 ## [[2]]
-## [1] &quot;TheBooksProphet: @bookables1 Hermione Granger, arya stark, daenerys tagaryen, and Eleanor from Eleanor and park&quot;
+## [1] &quot;SAAVlK: RT @ESEAsianBeauty: there&#39;s an entire tumblr dedicated to hating Eleanor And Park, i&#39;m living https://t.co/lqTdYMboMj&quot;
 ## 
 ## [[3]]
-## [1] &quot;MattMurph24: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;hoejackman: RT @ESEAsianBeauty: there&#39;s an entire tumblr dedicated to hating Eleanor And Park, i&#39;m living https://t.co/lqTdYMboMj&quot;
 ## 
 ## [[4]]
-## [1] &quot;VickieStruck1: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;writeupcafe: Eleanor and Park . https://t.co/qPu9GX3VAT&quot;
 ## 
 ## [[5]]
-## [1] &quot;veritogonzi: #Eleanor&amp;amp;Park \xed\xa0\xbd\xed\xb8\x8d \xed\xa0\xbd\xed\xb1\x93\xed\xa0\xbd\xed\xb3\x91 https://t.co/MUnEWYyvkt&quot;
+## [1] &quot;desibxtch: Eleanor and Park https://t.co/uuhM32s6wm&quot;
 ## 
 ## [[6]]
-## [1] &quot;selenaazzz_: RT @fpsf: Don&#39;t miss your chance to see #Lorde in Eleanor Tinsley Park, grab your FPSF Tickets TODAY. https://t.co/xt1zrBk69B https://t.co/…&quot;
+## [1] &quot;zsyched: eleanor and park https://t.co/A0Yj4RyCIN&quot;
 ## 
 ## [[7]]
-## [1] &quot;LoganHeiman_: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;MalakTamerDonia: Eleanor and Park is a must read. Seriously.&quot;
 ## 
 ## [[8]]
-## [1] &quot;veritogonzi: #Eleanor&amp;amp;Park \xed\xa0\xbd\xed\xb8\x8d \xed\xa0\xbd\xed\xb1\x93\xed\xa0\xbd\xed\xb3\x91 https://t.co/b2vKcHBCl7&quot;
+## [1] &quot;_Ashleyyy_xoxo: You can be Han Solo,\&quot; he said, kissing her throat. \&quot;And I&#39;ll be Boba Fett. I&#39;ll cross the sky for you.-Eleanor &amp;amp; Park&quot;
 ## 
 ## [[9]]
-## [1] &quot;njantiques: In honor of #internationalwomensday, I am featuring Eleanor Roosevelt National Historic Site in Hyde Park,... https://t.co/X5v5Z7ImJD&quot;
+## [1] &quot;wingstrbl: ok that didnt sound so weird when eleanor was talking about park .. i&quot;
 ## 
 ## [[10]]
-## [1] &quot;holypurpxse: eleanor and park https://t.co/bhRbt0e60x&quot;
+## [1] &quot;Jeffafang: God I hate almost everything about Eleanor and Park! These two characters are so freaking annoying all through out the book!&quot;
 ## 
 ## [[11]]
-## [1] &quot;shielapinuela: Eleanor and Park Book two Plsssssss! @rainbowrowell \xed\xa0\xbd\xed\xb8\xad\xed\xa0\xbd\xed\xb8\x8d&quot;
+## [1] &quot;anisimovgranit2: RT @MMFlint: A hat for Eleanor Roosevelt in Riverside Park, NYC https://t.co/XsmnNGyA7D&quot;
 ## 
 ## [[12]]
-## [1] &quot;fj_newman: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;NlGHTANDDAY: @PRlNCIPESSA wow. eleanor and park. lit.&quot;
 ## 
 ## [[13]]
-## [1] &quot;Martinez_girl03: RT @fpsf: Don&#39;t miss your chance to see #Lorde in Eleanor Tinsley Park, grab your FPSF Tickets TODAY. https://t.co/xt1zrBk69B https://t.co/…&quot;
+## [1] &quot;ho4m51jg0s86sxK: RT @MMFlint: A hat for Eleanor Roosevelt in Riverside Park, NYC https://t.co/XsmnNGyA7D&quot;
 ## 
 ## [[14]]
-## [1] &quot;leancuisineee_: RT @fpsf: Don&#39;t miss your chance to see #Lorde in Eleanor Tinsley Park, grab your FPSF Tickets TODAY. https://t.co/xt1zrBk69B https://t.co/…&quot;
+## [1] &quot;SwVxZWQXQ3YieUm: RT @MMFlint: A hat for Eleanor Roosevelt in Riverside Park, NYC https://t.co/XsmnNGyA7D&quot;
 ## 
 ## [[15]]
-## [1] &quot;fpsf: Don&#39;t miss your chance to see #Lorde in Eleanor Tinsley Park, grab your FPSF Tickets TODAY. https://t.co/xt1zrBk69B https://t.co/vc5E4QcwG8&quot;
+## [1] &quot;yejinose: Eleanor Park is the name. \xed\xa0\xbd\xed\xb2\xab https://t.co/TvhBFmhvkB&quot;
 ## 
 ## [[16]]
-## [1] &quot;bridgetanne78: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;ilikemanystuff: Day 20: Eleanor &amp;amp; Park by Rainbow Rowell\naka one of the cutest and purest books i have ever read https://t.co/209x0wKJdV&quot;
 ## 
 ## [[17]]
-## [1] &quot;HillaryIn2020: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;1rockyg: Eleanor &amp;amp; Park is an amazing book. 12/10 will read again when I learn not to get attached to a book.&quot;
 ## 
 ## [[18]]
-## [1] &quot;Rogue_Beaver: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;n5gham: On page 115 of 328 of Eleanor &amp;amp; Park, by Rainbow Rowell https://t.co/YhIlWG7PQC&quot;
 ## 
 ## [[19]]
-## [1] &quot;nikroybal: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;
+## [1] &quot;barcos_2: Has anyone read Eleanor and park?&quot;
 ## 
 ## [[20]]
-## [1] &quot;EuDestroyer: RT @ABCLiz: (HRC says she and her friends took a trip to visit Eleanor Roosevelt&#39;s home in Hyde Park this past weekend)&quot;</code></pre>
+## [1] &quot;ClaireElise442: I was reading Eleanor &amp;amp; Park bc I had to I didn&#39;t sign up for the feels like wth you can&#39;t just end it like that&quot;</code></pre>
 </div>
 <div id="key-themes" class="section level2">
 <h2>Key Themes</h2>

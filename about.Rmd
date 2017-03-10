@@ -3,7 +3,3 @@ title: "About This Website"
 ---
 
 More about this website.
-
-need to add more
-
-update

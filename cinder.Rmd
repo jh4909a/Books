@@ -35,7 +35,7 @@ setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
 ```
 
 
-```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, echo=FALSE, warning=FALSE}
+```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
 search_term <- "Lunar Chronicles" 
 language <- "en"

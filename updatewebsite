@@ -1,0 +1,6 @@
+to update website:
+
+open shell
+  log in: ssh exploretheworld@stat370.com
+  cd public_html/Books
+  make

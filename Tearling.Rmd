@@ -90,7 +90,7 @@ tweets_transformed5 <- tm_map(tweets_transformed4,
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
-``` {r Tweets, message='false'}
+``` {r Tweets, message='false', warning=FALSE, echo=FALSE}
 
 # Run Twitter Search
 
