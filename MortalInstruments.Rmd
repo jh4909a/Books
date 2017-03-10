@@ -91,7 +91,7 @@ wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 
 # Run Twitter Search
 
-tweets <- searchTwitter("City of Bones", n=500, lang="en")
+tweets <- searchTwitter("City of Bones", n=3200, lang="en")
 
 head(tweets, 20)
 ```

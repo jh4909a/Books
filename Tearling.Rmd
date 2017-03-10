@@ -90,11 +90,11 @@ tweets_transformed5 <- tm_map(tweets_transformed4,
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
-``` {r Tweets, message='false', warning=FALSE, echo=FALSE}
+``` {r Tweets, message=FALSE, warning=FALSE, echo=FALSE}
 
 # Run Twitter Search
 
-tweets <- searchTwitter("Queen+Tearling", n=500, lang="en")
+tweets <- searchTwitter("Queen+Tearling", n=3200, lang="en")
 
 head(tweets, 20)
 ```

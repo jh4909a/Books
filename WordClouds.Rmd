@@ -89,16 +89,14 @@ wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
 ##Recent Tweets
-``` {r Tweets, warning=FALSE, echo=FALSE}
+``` {r Tweets, message='false', warning=FALSE, echo=FALSE}
 
 # Run Twitter Search
 
-tweets <- searchTwitter("Perks Wallflower", n=500, lang="en")
+tweets <- searchTwitter("Perks+Wallflower", n=3200, lang="en")
 
-#Transform tweets list into a data frame
-tweets.df <- twListToDF(tweets)
-
-head(tweets.df, 10)
+head(tweets, 20)
+```
 ```
 
 ##Key Themes
