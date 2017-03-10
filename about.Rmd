@@ -3,6 +3,5 @@ title: "About <b>It's a Metaphor</b>"
 ---
 
 ``` {r test}
-print("<b>cinder</b> book")
-
+print("<html><b>cinder</b> book</html>")
 ```
