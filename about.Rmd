@@ -2,7 +2,7 @@
 title: "About <b>It's a Metaphor</b>"
 ---
 
-``` {r test, results='asis'}
+``` {r test, results='asis', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 print("<b>cinder</b> book")
 ```
 
