@@ -15,3 +15,5 @@ title: "It's a Metaphor"
 	Books are the same. They can heal, raise forgotten pain, or simply transport you away. 
 	
 	It’s your choice. Decide your metaphor. 
+	
+![](Books.jpeg)
