@@ -2,12 +2,9 @@
 title: "Harry Potter"
 output: 
   html_document:
-    theme: "darkly"
+    theme: "yeti"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 Author: J.K. Rowling
 
 **“But you know, happiness can be found even in the darkest of times, if one only remembers to turn on the light.”**
