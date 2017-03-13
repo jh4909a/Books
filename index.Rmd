@@ -18,12 +18,16 @@ title: "It's a Metaphor"
 	
 ![](Books.jpeg)
 
+
+
+
+      
 ###Books
 [Cinder](http://stat370.com/~exploretheworld/Books/_site/cinder.html)
 
 [City of Bones](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
 
-[Eleanor & Park](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)
+[Eleanor & Park](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)
 
 [Harry Potter](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)
 

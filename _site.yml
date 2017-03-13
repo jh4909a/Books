@@ -9,17 +9,17 @@ navbar:
     - text: "Books"
       icon: fa-gear
       menu:
-        - text: "Perks of Being a Wallflower"
-          href: WordClouds.html
-        - text: "Queen of the Tearling"
-          href: Tearling.html
-        - text: "Eleanor & Park"
-          href: EleanorPark.html
         - text: "Cinder"
           href: cinder.html
         - text: "City of Bones"
           href: MortalInstruments.html
+        - text: "Eleanor & Park"
+          href: EleanorPark.html
         - text: "Harry Potter"
           href: HarryPotter.html
+        - text: "Perks of Being a Wallflower"
+          href: WordClouds.html
+        - text: "Queen of the Tearling"
+          href: Tearling.html
     - text: "Upcoming Pages"
       href: Upcoming.html
