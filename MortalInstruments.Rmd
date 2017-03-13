@@ -94,6 +94,18 @@ for(i in 1:20){
 ```
 
 
+```{r tweet map, message=FALSE, echo=FALSE, warning=FALSE}
+tweets.df <- do.call("rbind",lapply(tweets,as.data.frame))
+
+
+install.packages("maps", repos = "http://cran.us.r-project.org")
+library(maps)
+#plots worldmap
+map('world')
+#plots tweets
+points(tweets.df$longitude,tweets.df$latitude, pch=20, cex=1, col="red")
+```
+
 ##Key Themes
 * fightingdemons
 * urban

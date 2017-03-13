@@ -94,11 +94,11 @@ for(i in 1:20){
 }
 ```
 
-```{r tweet map}
+```{r tweet map, message=FALSE, echo=FALSE, warning=FALSE}
 tweets.df <- do.call("rbind",lapply(tweets,as.data.frame))
 
 
-install.packages("maps")
+install.packages("maps", repos = "http://cran.us.r-project.org")
 library(maps)
 #plots worldmap
 map('world')
