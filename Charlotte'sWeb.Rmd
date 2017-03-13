@@ -1,31 +1,29 @@
 ---
-title: "A Wrinkle in Time"
+title: "Charlotte's Web"
 output: 
   html_document:
     theme: "cerulean"
 ---
 
-Author: Madeleine L'Engle
+Author: E.B. White
 
-**“If you aren't unhappy sometimes you don't know how to be happy.”**
+**“Trust me, Wilbur. People are very gullible. They'll believe anything they see in print.”**
 
-― Madeleine L'Engle, A Wrinkle in Time
+― E.B. White, Charlotte's Web
 
-![](WrinkleTime.jpeg)
+![](Charlotte'sWeb.jpg)
 
 
 
 ## Summary
-It was a dark and stormy night; Meg Murry, her small brother Charles Wallace, and her mother had come down to the kitchen for a midnight snack when they were upset by the arrival of a most disturbing stranger. 
+*Some Pig. Humble. Radiant.* These are the words in Charlotte's Web, high up in Zuckerman's barn. Charlotte's spiderweb tells of her feelings for a little pig named Wilbur, who simply wants a friend. They also express the love of a girl named Fern, who saved Wilbur's life when he was born the runt of his litter.
 
-"Wild nights are my glory," the unearthly stranger told them. "I just got caught in a downdraft and blown off course. Let me be on my way. Speaking of way, by the way, there is such a thing as a tesseract".
-
-Meg's father had been experimenting with this fifth dimension of time travel when he mysteriously disappeared. Now the time has come for Meg, her friend Calvin, and Charles Wallace to rescue him. But can they outwit the forces of evil they will encounter on their heart-stopping journey through space?
+E. B. White's Newbery Honor Book is a tender novel of friendship, love, life, and death that will continue to be enjoyed by generations to come. It contains illustrations by Garth Williams, the acclaimed illustrator of E.B. White's Stuart Little and Laura Ingalls Wilder's Little House series, among many other books.
 
 ```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
-search_term <- "A Wrinkle in Time"  # For two terms use e.g. "Queen+Tearling"
-# For hashtags use e.g. "#A Wrinkle in Time"
+search_term <- "Charlotte's Web"  # For two terms use e.g. "Queen+Tearling"
+# For hashtags use e.g. "#Charlotte's Web"
 language <- "en"
 sample_size <- 3200
 AU_geocode <- '38.9375300,-77.0868600,10mi'  # Latitude, Longitude, Radius
@@ -85,7 +83,7 @@ wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 
 # Run Twitter Search
 
-tweets <- searchTwitter("A Wrinkle in Time", n=3200, lang="en")
+tweets <- searchTwitter("Charlotte's Web", n=3200, lang="en")
 
 for(i in 1:20){
   print(tweets[[i]])
@@ -106,14 +104,13 @@ points(tweets.df$longitude,tweets.df$latitude, pch=20, cex=1, col="red")
 
 ##Key Themes
 * bookstomovies
-* crossworlds
-* strongfemaleleads
 * classics
 
 ##Extras
 * Time's "100 Best Young Adult Books of All Time"   
-* Newbery Medal   
+* Newbery Honor   
 * Oklahoma Sequoyah Book Award   
+* Laura Ingalls Wilder Award (1970)   
 
 ***
 <small> <small>  

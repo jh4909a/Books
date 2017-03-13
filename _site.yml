@@ -9,6 +9,8 @@ navbar:
     - text: "Books"
       icon: fa-gear
       menu:
+        - text: "Charlotte's Web"
+          href: Charlotte'sWeb.Rmd
         - text: "Cinder"
           href: cinder.html
         - text: "City of Bones"
