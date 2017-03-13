@@ -19,5 +19,5 @@ title: "It's a Metaphor"
 ![](Books.jpeg)
 
 ###Books
-(http://stat370.com/~exploretheworld/Books/_site/WordClouds.html) [Perks of Being a Wallflower]
+[Perks of Being a Wallflower](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html) 
 
