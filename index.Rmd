@@ -18,4 +18,6 @@ title: "It's a Metaphor"
 	
 ![](Books.jpeg)
 
-List of books with links to pages here
+###Books
+(http://stat370.com/~exploretheworld/Books/_site/WordClouds.html) [Perks of Being a Wallflower]
+
