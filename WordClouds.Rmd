@@ -106,13 +106,6 @@ head(tweets, 20)
 * An American Library Association Best Book for Young Adults (2000) 
 * Best Book for Reluctant Readers (2000)
 
-##Where to Buy
-https://www.amazon.com/Perks-Being-Wallflower-Stephen-Chbosky/dp/1451696191/ref=sr_1_1?s=books&ie=UTF8&qid=1487100122&sr=1-1&keywords=perks+of+being+a+wallflower
-
-http://www.barnesandnoble.com/w/perks-of-being-a-wallflower-stephen-chbosky/1100365675?ean=9781451696196#productInfoTabs
-
-
-
 <small> <small>  
 
 * summary from Goodreads 

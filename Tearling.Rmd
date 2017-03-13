@@ -104,11 +104,6 @@ head(tweets, 20)
 * A LibraryReads Selection
 * Emma Watson is rumored to play Kelsea in a future movie adaptation
 
-##Where to Buy
-https://www.amazon.com/Queen-Tearling-Novel/dp/0062290363 
-
-http://www.barnesandnoble.com/w/the-queen-of-the-tearling-erika-johansen/1119613364?ean=9780062376688
-
 ***
 <small> <small>  
 

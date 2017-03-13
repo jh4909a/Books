@@ -97,11 +97,6 @@ head(tweets, 20)
 * urban
 * bookstomovies
 
-##Where to Buy
-https://www.amazon.com/Bones-Mortal-Instruments-Cassandra-Clare/dp/1481455923
-
-http://www.barnesandnoble.com/w/city-of-bones-cassandra-clare/1100329400
-
 ***
 <small> <small>  
 

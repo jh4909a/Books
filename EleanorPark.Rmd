@@ -109,11 +109,6 @@ head(tweets, 20)
 * A Kirkus Reviews Best Teen Book of 2013
 * An NPR Best Book of 2013
 
-##Where to Buy
-https://www.amazon.com/Eleanor-Park-Rainbow-Rowell/dp/1250012570
-
-http://www.barnesandnoble.com/w/eleanor-park-rainbow-rowell/1110274728
-
 ***
 <small> <small>  
 
