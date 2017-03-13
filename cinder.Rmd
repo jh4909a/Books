@@ -94,11 +94,10 @@ for(i in 1:20){
 }
 ```
 
-b
 ##Key Themes
-* cyber
-* retoldfairytale
-* strongfemalelead
+* cyber   
+* retoldfairytale   
+* strongfemalelead   
 
 ##Extras
 * A #1 New York Times Bestselling Series

@@ -91,7 +91,9 @@ wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 
 tweets <- searchTwitter("Queen+Tearling", n=3200, lang="en")
 
-head(tweets, 20)
+for(i in 1:20){
+  print(tweets[[i]])
+}
 ```
 
 ##Key Themes
