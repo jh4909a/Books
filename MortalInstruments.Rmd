@@ -34,14 +34,9 @@ since <- '2016-10-08'  # Election Day
 until <- '2016-11-08'  # INSERT Until Date, not used here
 ##### EDIT SEARCH PARAMETERS ABOVE
 
-# NEXT 4 LINES LOAD LIBRARIES OF FUNCTIONS
-consumer_key <- "qOvNAzHxL7i8R1AajYJZumw5M"
-consumer_secret <- "1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt"
-access_token <- "3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L"
-access_secret <- "KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9"
+source('~/Documents/Spring2017/Books/Books/TwitterAuth.R')
 
 library(twitteR)
-setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
 library(tm)
 library(wordcloud)
 library(RColorBrewer)

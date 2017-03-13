@@ -24,14 +24,8 @@ Although eager to impress the prince, Cinder's intentions are derailed when her 
 But it doesn't take long for the scientists to discover something unusual about their new guinea pig. Something others would kill for. 
 
 ```{r Twitter Auto, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
-library(twitteR)
-library(httr)
 
-consumer_key <- "qOvNAzHxL7i8R1AajYJZumw5M"
-consumer_secret <- "1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt"
-access_token <- "3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L"
-access_secret <- "KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9"
-setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
+source('~/Documents/Spring2017/Books/Books/TwitterAuth.R')
 ```
 
 
