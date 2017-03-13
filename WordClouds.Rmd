@@ -94,7 +94,6 @@ for(i in 1:20){
   print(tweets[[i]])
 }
 ```
-```
 
 ##Key Themes
 * bookstomovies
