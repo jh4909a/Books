@@ -23,6 +23,8 @@ title: "It's a Metaphor"
 
       
 ###Books
+[Charlotte's Web](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)
+
 [Cinder](http://stat370.com/~exploretheworld/Books/_site/cinder.html)
 
 [City of Bones](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
