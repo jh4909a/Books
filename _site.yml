@@ -19,5 +19,7 @@ navbar:
           href: cinder.html
         - text: "City of Bones"
           href: MortalInstruments.html
+        - text: "Harry Potter"
+          href: HarryPotter.html
     - text: "Upcoming Pages"
       href: Upcoming.html
