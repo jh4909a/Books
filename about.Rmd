@@ -10,6 +10,6 @@ It is easy to get stuck after reading a wonderful book. This website serves to s
 
 "It's a Metaphor" is dedicated to young adult books with a focus on the two "best young adult books" lists from Time magazine and NPR.
 
-This website is made from R and uses codes to create wordclouds of the most used words in tweets that include the book title. It pulls tweets from the last two weeks.
+This website is made from R and uses codes to create wordclouds of the most used words in tweets that include the book title. It pulls tweets from the last two weeks and searches through up to 3200 tweets.
 
 ![](Alive.jpeg)

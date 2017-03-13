@@ -21,5 +21,7 @@ navbar:
           href: WordClouds.html
         - text: "Queen of the Tearling"
           href: Tearling.html
+        - text: "A Wrinkle in Time"
+          href: WrinkleTime.html
     - text: "Upcoming Pages"
       href: Upcoming.html
