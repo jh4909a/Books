@@ -10,7 +10,7 @@ navbar:
       icon: fa-gear
       menu:
         - text: "Charlotte's Web"
-          href: Charlotte'sWeb.Rmd
+          href: CharlottesWeb.Rmd
         - text: "Cinder"
           href: cinder.html
         - text: "City of Bones"
