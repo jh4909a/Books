@@ -23,6 +23,7 @@ title: "It's a Metaphor"
 
       
 ###Books
+*Click on the book cover to view the page*
 [![](Charlotte'sWeb.jpg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)
 
 [![](cinder.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)
