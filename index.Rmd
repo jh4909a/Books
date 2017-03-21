@@ -28,22 +28,6 @@ title: "It's a Metaphor"
 
 First Header  | Second Header
 ------------- | -------------
-[![](Charlotte'sWeb.jpg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)  | [![](cinder.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)
-Content Cell  | Content Cell
-Reference Style Links and Images
-
-
-
-[![](cinder.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)
-
-[![](cityofbones.jpeg)](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
-
-[![](eleanorpark.jpeg)](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)
-
-[![](HarryPotter.jpeg)](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)
-
-[![](wallflower.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html)     
-
-[![](tearling.jpeg)](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)
-
-[![](WrinkleTime.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WrinkleTime.html)
+[![](Charlotte'sWeb.jpg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)  | [![](cinder.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)  | [![](cityofbones.jpeg)](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
+[![](eleanorpark.jpeg)](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)  | [![](HarryPotter.jpeg)](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)  | [![](wallflower.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html) 
+[![](tearling.jpeg)](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)  | [![](WrinkleTime.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WrinkleTime.html)  | 
