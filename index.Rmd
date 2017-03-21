@@ -23,18 +23,18 @@ title: "It's a Metaphor"
 
       
 ###Books
-[Charlotte's Web](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)
+[![](Charlotte'sWeb.jpg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)
 
-[Cinder](http://stat370.com/~exploretheworld/Books/_site/cinder.html)
+[![](cinder.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)
 
-[City of Bones](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
+[![](cityofbones.jpeg)](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
 
-[Eleanor & Park](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)
+[![](eleanorpark.jpeg)](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)
 
 [![](HarryPotter.jpeg)](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)
 
-[Perks of Being a Wallflower](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html)     
+[![](wallflower.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html)     
 
-[Queen of the Tearling](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)
+[![](tearling.jpeg)](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)
 
-[A Wrinkle in Time](http://stat370.com/~exploretheworld/Books/_site/WrinkleTime.html)
+[![](WrinkleTime.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WrinkleTime.html)
