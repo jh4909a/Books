@@ -31,7 +31,7 @@ title: "It's a Metaphor"
 
 [Eleanor & Park](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)
 
-[Harry Potter](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)
+[![](HarryPotter.jpeg)](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)
 
 [Perks of Being a Wallflower](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html)     
 
