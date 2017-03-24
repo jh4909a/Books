@@ -27,6 +27,6 @@ title: "It's a Metaphor"
 
 
 
-[![](Charlotte'sWeb.jpg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)[![](cinder.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)[![](cityofbones.jpeg)](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
-[![](eleanorpark.jpeg)](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)[![](HarryPotter.jpeg)](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)[![](wallflower.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html) 
-[![](tearling.jpeg)](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)[![](WrinkleTime.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WrinkleTime.html)
+[![](Charlotte'sWeb.jpg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)[![\n\n\n](cinder.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)[![\n\n\n](cityofbones.jpeg)](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
+[![](eleanorpark.jpeg)](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)[![\n\n\n](HarryPotter.jpeg)](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)[![\n\n\n](wallflower.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html) 
+[![](tearling.jpeg)](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)[![\n\n\n](WrinkleTime.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WrinkleTime.html)

@@ -27,3 +27,7 @@ navbar:
           href: WrinkleTime.html
     - text: "Upcoming Pages"
       href: Upcoming.html
+      output:
+html_document:
+  theme: flatly
+  highlight: textmate
