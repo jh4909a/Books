@@ -2,7 +2,7 @@
 title: "Perks of Being a Wallflower"
 output: 
   html_document:
-    theme: "yeti"
+    theme: "flatly"
 ---
 
 Author: Stephen Chbosky

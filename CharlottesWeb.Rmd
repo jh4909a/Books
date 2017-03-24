@@ -2,7 +2,7 @@
 title: "Charlotte's Web"
 output: 
   html_document:
-    theme: "cerulean"
+    theme: "flatly"
 ---
 
 Author: E.B. White
@@ -79,7 +79,7 @@ tweets_transformed5 <- tm_map(tweets_transformed4,
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
 
-``` {r Tweets, message=FALSE, warning=FALSE, echo=FALSE, error=FALSE, eval=FALSE}
+``` {r Tweets, message=FALSE, warning=FALSE, echo=FALSE, error=FALSE}
 
 # Run Twitter Search
 
@@ -90,7 +90,7 @@ for(i in 1:20){
 }
 ```
 
-```{r tweet map, message=FALSE, echo=FALSE, warning=FALSE, eval=FALSE}
+```{r tweet map, message=FALSE, echo=FALSE, warning=FALSE}
 tweets.df <- do.call("rbind",lapply(tweets,as.data.frame))
 
 

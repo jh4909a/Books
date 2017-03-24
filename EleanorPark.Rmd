@@ -2,7 +2,7 @@
 title: "Eleanor & Park"
 output: 
   html_document:
-    theme: "spacelab"
+    theme: "flatly"
 ---
 
 ```{r setup, include=FALSE}

@@ -2,7 +2,7 @@
 title: "Queen of the Tearling"
 output: 
   html_document:
-    theme: "cerulean"
+    theme: "flatly"
 ---
 
 ```{r setup, include=FALSE}

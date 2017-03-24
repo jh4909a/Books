@@ -2,7 +2,7 @@
 title: "Cinder"
 output: 
   html_document:
-    theme: "lumen"
+    theme: "flatly"
 ---
 
 ```{r setup, include=FALSE}
