@@ -2,7 +2,7 @@
 title: "Harry Potter"
 output: 
   html_document:
-    theme: "yeti"
+    theme: "flatly"
 ---
 
 Author: J.K. Rowling
