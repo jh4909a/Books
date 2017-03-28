@@ -1,0 +1,14 @@
+---
+title: "The Curious Incident of the Dog in the Night-Time"
+output: 
+  html_document:
+    theme: "flatly"
+---
+
+Author: Mark Haddon
+
+**“Also, dogs are faithful and they do not tell lies because they cannot talk.”**
+
+― Mark Haddon, The Curious Incident of the Dog in the Night-Time
+
+![](Dog.jpeg)

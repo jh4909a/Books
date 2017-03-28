@@ -1,4 +1,4 @@
-all: _site/about.html _site/cinder.html _site/EleanorPark.html _site/index.html _site/MortalInstruments.html _site/Tearling.html _site/Upcoming.html _site/WordClouds.html _site/HarryPotter.html _site/WrinkleTime.html _site/CharlottesWeb.html
+all: _site/about.html _site/cinder.html _site/EleanorPark.html _site/index.html _site/MortalInstruments.html _site/Tearling.html _site/Upcoming.html _site/WordClouds.html _site/HarryPotter.html _site/WrinkleTime.html _site/CharlottesWeb.html _site/Dog.html
 
 _site/about.html: about.Rmd
 	Rscript  -e 'rmarkdown:: render("about.Rmd","html_document")'
@@ -43,6 +43,10 @@ _site/WordClouds.html: WordClouds.Rmd
 _site/WrinkleTime.html: WrinkleTime.Rmd
 	Rscript  -e 'rmarkdown:: render("WrinkleTime.Rmd","html_document")'
 	mv WrinkleTime.html _site
+
+_site/Dog.html: Dog.Rmd
+	Rscript  -e 'rmarkdown:: render("Dog.Rmd","html_document")'
+	mv Dog.html _site
 	
 site:
 	Rscript -e 'rmarkdown:: render_site()'

@@ -25,6 +25,8 @@ navbar:
           href: Tearling.html
         - text: "A Wrinkle in Time"
           href: WrinkleTime.html
+        - text: "The Curious Incident of the Dog in the Night-Time"
+          href: Dog.html
     - text: "Upcoming Pages"
       href: Upcoming.html
       output:
