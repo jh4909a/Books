@@ -30,6 +30,6 @@ output:
 
 
 
-[![](Charlotte'sWebSpace.jpg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)[![\n\n\n](cinderSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)[![\n\n\n](cityofbonesSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
+[![](Charlotte'sWebSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/CharlottesWeb.html)[![\n\n\n](cinderSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/cinder.html)[![\n\n\n](cityofbonesSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/MortalInstruments.html)
 [![](eleanorparkSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/EleanorPark.html)[![\n\n\n](HarryPotterSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/HarryPotter.html)[![\n\n\n](wallflowerSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WordClouds.html) 
 [![](tearlingSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/Tearling.html)[![\n\n\n](WrinkleTimeSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/WrinkleTime.html)[![\n\n\n](DogSpace.jpeg)](http://stat370.com/~exploretheworld/Books/_site/Dog.html)
