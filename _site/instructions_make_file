@@ -1,7 +1,0 @@
-make- build the html files one at a time; only going to do the ones that have been modified
-make site- to build the entire site
-make clean- removes the build files; you still have the originals, just not the new ones that were messed up- created by make or build on R studio
-
-1. open in browser
-2. make 
-3. refresh browser
