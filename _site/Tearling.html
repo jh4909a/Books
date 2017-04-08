@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Queen of the Tearling</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">It's a Metaphor</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-gear"></span>
+     
+    Books
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="CharlottesWeb.html">Charlotte's Web</a>
+    </li>
+    <li>
+      <a href="cinder.html">Cinder</a>
+    </li>
+    <li>
+      <a href="MortalInstruments.html">City of Bones</a>
+    </li>
+    <li>
+      <a href="EleanorPark.html">Eleanor &amp; Park</a>
+    </li>
+    <li>
+      <a href="HarryPotter.html">Harry Potter</a>
+    </li>
+    <li>
+      <a href="WordClouds.html">Perks of Being a Wallflower</a>
+    </li>
+    <li>
+      <a href="Tearling.html">Queen of the Tearling</a>
+    </li>
+    <li>
+      <a href="WrinkleTime.html">A Wrinkle in Time</a>
+    </li>
+    <li>
+      <a href="Dog.html">The Curious Incident of the Dog in the Night-Time</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Upcoming.html">Upcoming Pages</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Queen of the Tearling</h1>
+
+</div>
+
+
+<p>Author: Erika Johansen <strong>“You think of beauty only as a blessing, Majesty, but it brings its own punishments.”</strong></p>
+<p>― Erika Johansen, Queen of the Tearling</p>
+<div class="figure">
+<img src="tearling.jpeg" />
+
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>An untested young princess must claim her throne, learn to become a queen, and combat a malevolent sorceress in an epic battle between light and darkness in this spectacular debut—the first novel in a trilogy.</p>
+<p>Young Kelsea Raleigh was raised in hiding after the death of her mother, Queen Elyssa, far from the intrigues of the royal Keep and in the care of two devoted servants who pledged their lives to protect her. Growing up in a cottage deep in the woods, Kelsea knows little of her kingdom’s haunted past . . . or that its fate will soon rest in her hands.</p>
+<p>Long ago, Kelsea’s forefathers sailed away from a decaying world to establish a new land free of modern technology. Three hundred years later, this feudal society has divided into three fearful nations who pay duties to a fourth: the powerful Mortmesne, ruled by the cunning Red Queen. Now, on Kelsea’s nineteenth birthday, the tattered remnants of the Queen’s Guard—loyal soldiers who protect the throne—have appeared to escort the princess on a perilous journey to the capital to ascend to her rightful place as the new Queen of the Tearling.</p>
+<p>Though born of royal blood and in possession of the Tear sapphire, a jewel of immense power and magic, Kelsea has never felt more uncertain of her ability to rule. But the shocking evil she discovers in the heart of her realm will precipitate an act of immense daring, throwing the entire kingdom into turmoil—and unleashing the Red Queen’s vengeance. A cabal of enemies with an array of deadly weapons, from crimson-caped assassins to the darkest blood magic, plots to destroy her. But Kelsea is growing in strength and stealth, her steely resolve earning her loyal allies, including the Queen’s Guard, led by the enigmatic Lazarus, and the intriguing outlaw known simply as “the Fetch.”</p>
+<p>Kelsea’s quest to save her kingdom and meet her destiny has only just begun. Riddled with mysteries, betrayals, and treacherous battles, Kelsea’s journey is a trial by fire that will either forge a legend . . . or destroy her.</p>
+<p><img src="Tearling_files/figure-html/thewordcloud-1.png" width="672" /></p>
+<pre><code>## [1] &quot;MadMakNY: @SuperLaurenLove \&quot;The Queen of the Tearling\&quot; series.&quot;
+## [1] &quot;Natalie_Crown: @RachelMisra it&#39;s chapter by chapter and very in depth so it will take time XD https://t.co/3XPuwdur3V&quot;
+## [1] &quot;RachelMisra: @Natalie_Crown have you read the queen of the tearling? If so...thoughts?&quot;
+## [1] &quot;BookFreakOut: @amanda_skoog @goodreads Queen of the Tearling is fabulous! \xed\xa0\xbd\xed\xb8\x80&quot;
+## [1] &quot;amanda_skoog: @goodreads Magnus Chase and the Hammer of Thor and The Queen of the Tearling! \xed\xa0\xbd\xed\xb3\x96❤️\n#amreading&quot;
+## [1] &quot;sophienotemily: @NoraReed The Girl of Fire and Thorns. Six of Crows. Queen of the Tearling. The Raven Boys. Finnikin of the Rock &amp;amp; sequels. Dragonsong&quot;
+## [1] &quot;travisdon1981: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;FindingHomeBook: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;wordrefiner: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;westmetromommy: 17% done with The Queen of the Tearling, by Erika Johansen https://t.co/9JTPzDGsv3&quot;
+## [1] &quot;thebelgbooklion: On page 285 of 448 of The Queen of the Tearling, by Erika Johansen https://t.co/GRwKk1Vsj3&quot;
+## [1] &quot;BoundGalaxy: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;ArgonPress: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;amandajevans: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;FDS_NaturallyMe: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;CowboySciFiBot: RT @Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.…&quot;
+## [1] &quot;Benefry: Erika Johansen-“The Invasion of the Tearling”-A Queen&#39;s Responsibility #scifi #SFRTG #IARTG https://t.co/AwKBffLauD https://t.co/6wKL3tjAbg&quot;
+## [1] &quot;heathershambles: 4 of 5 stars to The Queen of the Tearling by Erika Johansen https://t.co/LtCRlkKabL&quot;
+## [1] &quot;__brittbryan: @izaajulie I&#39;m interested in Scarlet &amp;amp; Queen of the Tearling. Let me know if you see anything in my media! Some have already been traded.&quot;
+## [1] &quot;AdamSanto: RT @RagnaBjornson: Finished reading The Queen of the Tearling last night. Next book on my list is #TheYearoftheFlood #AmReading&quot;</code></pre>
+<pre><code>## 
+## The downloaded binary packages are in
+##  /var/folders/ny/hkylpsnn3qs2pg8wdvtfwx_m0000gn/T//Rtmp1CEuYO/downloaded_packages</code></pre>
+<p><img src="Tearling_files/figure-html/tweet%20map-1.png" width="672" /></p>
+</div>
+<div id="key-themes" class="section level2">
+<h2>Key Themes</h2>
+<ul>
+<li>bookstomovies</li>
+<li>crossworlds</li>
+<li>strongfemaleleads</li>
+</ul>
+</div>
+<div id="extras" class="section level2">
+<h2>Extras</h2>
+<ul>
+<li>A #1 Indie Next Pick</li>
+<li>A LibraryReads Selection</li>
+<li>Emma Watson is rumored to play Kelsea in a future movie adaptation</li>
+</ul>
+<hr />
+<p><small> <small></p>
+<p>summary from Goodreads</p>
+<p>extras from Barnes &amp; Noble</p>
+<p></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

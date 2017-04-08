@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>The Curious Incident of the Dog in the Night-Time</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">It's a Metaphor</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-gear"></span>
+     
+    Books
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="CharlottesWeb.html">Charlotte's Web</a>
+    </li>
+    <li>
+      <a href="cinder.html">Cinder</a>
+    </li>
+    <li>
+      <a href="MortalInstruments.html">City of Bones</a>
+    </li>
+    <li>
+      <a href="EleanorPark.html">Eleanor &amp; Park</a>
+    </li>
+    <li>
+      <a href="HarryPotter.html">Harry Potter</a>
+    </li>
+    <li>
+      <a href="WordClouds.html">Perks of Being a Wallflower</a>
+    </li>
+    <li>
+      <a href="Tearling.html">Queen of the Tearling</a>
+    </li>
+    <li>
+      <a href="WrinkleTime.html">A Wrinkle in Time</a>
+    </li>
+    <li>
+      <a href="Dog.html">The Curious Incident of the Dog in the Night-Time</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Upcoming.html">Upcoming Pages</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">The Curious Incident of the Dog in the Night-Time</h1>
+
+</div>
+
+
+<p>Author: Mark Haddon</p>
+<p><strong>“Also, dogs are faithful and they do not tell lies because they cannot talk.”</strong></p>
+<p>― Mark Haddon, The Curious Incident of the Dog in the Night-Time</p>
+<div class="figure">
+<img src="Dog.jpeg" />
+
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>Christopher John Francis Boone knows all the countries of the world and their capitals and every prime number up to 7,057. He relates well to animals but has no understanding of human emotions. He cannot stand to be touched. And he detests the color yellow.</p>
+<p>Although gifted with a superbly logical brain, for fifteen-year-old Christopher everyday interactions and admonishments have little meaning. He lives on patterns, rules, and a diagram kept in his pocket. Then one day, a neighbor’s dog, Wellington, is killed and his carefully constructive universe is threatened. Christopher sets out to solve the murder in the style of his favourite (logical) detective, Sherlock Holmes. What follows makes for a novel that is funny, poignant and fascinating in its portrayal of a person whose curse and blessing are a mind that perceives the world entirely literally.</p>
+<p><img src="Dog_files/figure-html/thewordcloud-1.png" width="672" /></p>
+<pre><code>## [1] &quot;MrChuckCranston: #Detroit! Win tix for THE CURIOUS INCIDENT OF THE DOG IN THE NIGHT-TIME, from @yesnofilms! https://t.co/wJIUGZiaj2 https://t.co/ZFONG3K3oF&quot;
+## [1] &quot;GraceBlake3: RT @BroadwayWorldUK: The National Theatre Announces 2017 Tour Dates for THE CURIOUS INCIDENT OF THE DOG IN THE NIGHT-TIME... \nhttps://t.co/…&quot;
+## [1] &quot;columbiahorror: @jupitersirena The curious incident of the dog in the night time&quot;
+## [1] &quot;deba1029: #Detroit! Win tix for THE CURIOUS INCIDENT OF THE DOG IN THE NIGHT-TIME, from @yesnofilms! https://t.co/sgWg3qFGuj https://t.co/bbQ53c7lEC&quot;
+## [1] &quot;cassay_hool: RT @_niamhloftus: the curious incident of the dog in the night time is the best play ever&quot;
+## [1] &quot;scottiestar: I hurt today...breakfast in bed as I plough through the wonderful, Curious Incident of the Dog in the Night-time. https://t.co/d18GtxR44B&quot;
+## [1] &quot;cjsorel: #Detroit! Win tix for THE CURIOUS INCIDENT OF THE DOG IN THE NIGHT-TIME, from @yesnofilms! https://t.co/kIRQloMnuI https://t.co/SMwNzPBJoO&quot;
+## [1] &quot;growyourown63: RT @RoyalNottingham: 6 reviews that should make you want to buy a ticket for @curiousonstage On-stage at the Theatre Royal til Sat 15 Apr h…&quot;
+## [1] &quot;BroadwayWorldUK: The National Theatre Announces 2017 Tour Dates for THE CURIOUS INCIDENT OF THE DOG IN THE NIGHT-TIME... \nhttps://t.co/3nMLKe618Q&quot;
+## [1] &quot;reading_your: list book online new all book fre | the curious incident of the dog in the night-time (2016)\nhttps://t.co/iibESsaJjj&quot;
+## [1] &quot;_niamhloftus: the curious incident of the dog in the night time is the best play ever&quot;
+## [1] &quot;Adrian47f: @Adrian47f found: Enjoy the Ultimate West End Trip Win a pair of tickets to The Curious Incident of the Dog in https://t.co/BFc8u1fJPX #HUKD&quot;
+## [1] &quot;NottinghamLive: I&#39;ll cut to the chase and put it straight out there that this is the best play I&#39;ve ever seen. It was, quite... https://t.co/mdIHYx48JV&quot;
+## [1] &quot;TSCADrama: RT @ItsMuchMore: Review : The Curious Incident of the Dog in the Night-Time , Theatre Royal Nottingham  https://t.co/6gatXPgyM9 https://t.c…&quot;
+## [1] &quot;gillette_gene: RT @wkyc: &#39;Curious Incident of the Dog in the Night-Time&#39; opens at Playhouse Square https://t.co/QYLTHSzTtp https://t.co/veCC0XpWgh&quot;
+## [1] &quot;TalkStageyToMe: The Curious incident of the Dog in the Night-Time is at @RoyalNottingham now... \n\nhttps://t.co/O0cNKqToOA&quot;
+## [1] &quot;battleship1: 4-pack of tickets for THE CURIOUS INCIDENT OF THE DOG IN THE NIGHT-TIME https://t.co/gbMQm9MbJT&quot;
+## [1] &quot;battleship1: #Detroit! Win tix for THE CURIOUS INCIDENT OF THE DOG IN THE NIGHT-TIME, from @yesnofilms! https://t.co/LpX16MDLHF https://t.co/yjDDUTR53Y&quot;
+## [1] &quot;XGamerRichy: RT @RoyalNottingham: 6 reviews that should make you want to buy a ticket for @curiousonstage On-stage at the Theatre Royal til Sat 15 Apr h…&quot;
+## [1] &quot;bendsley: RT @watchsnapper: If you can, go and see The Curious Incident Of The Dog In The Night-Time, folks. It&#39;s astonishingly brilliant and wonderf…&quot;</code></pre>
+<pre><code>## 
+## The downloaded binary packages are in
+##  /var/folders/ny/hkylpsnn3qs2pg8wdvtfwx_m0000gn/T//Rtmp1CEuYO/downloaded_packages</code></pre>
+<p><img src="Dog_files/figure-html/tweet%20map-1.png" width="672" /></p>
+</div>
+<div id="key-themes" class="section level2">
+<h2>Key Themes</h2>
+<ul>
+<li>autism</li>
+<li>outcasts</li>
+</ul>
+</div>
+<div id="extras" class="section level2">
+<h2>Extras</h2>
+<ul>
+<li>2001-2010 Guardian Children’s Fiction Prize<br />
+</li>
+<li>Winners2001-2010 Winner - Garden State Teen Book Awards - Fiction Grades 9-12<br />
+</li>
+<li>2003 Carnegie Medal Shortlist<br />
+</li>
+<li>2003 Los Angeles Times Book Prize Winners<br />
+</li>
+<li>2003 Whitbread Book Award Winners<br />
+</li>
+<li>2004 Alex Awards<br />
+</li>
+<li>2005-2006 Texas Tayshas Reading List</li>
+<li>Los Angeles Times Book Prize for First Fiction (Art Seidenbaum Award)<br />
+</li>
+<li>New York Public Library’s 25 Books to Remember for 2003<br />
+</li>
+<li>New York Times Notable Fiction &amp; Poetry of 2003<br />
+</li>
+<li>Novel-&gt;Costa/Whitbread Book Award<br />
+</li>
+<li>Publishers Weekly’s Best Fiction of 2003<br />
+</li>
+<li>Strife - FictionUS News &amp; World Report Favorite Books of 2003<br />
+</li>
+<li>Village Voice Best Books of the Year 2003<br />
+</li>
+<li>Washington Post’s Best Fiction of 2003</li>
+</ul>
+<hr />
+<p><small> <small></p>
+<p>summary from Goodreads</p>
+<p>extras from Barnes &amp; Noble</p>
+<p></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

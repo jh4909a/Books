@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Charlotte’s Web</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">It's a Metaphor</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-gear"></span>
+     
+    Books
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="CharlottesWeb.html">Charlotte's Web</a>
+    </li>
+    <li>
+      <a href="cinder.html">Cinder</a>
+    </li>
+    <li>
+      <a href="MortalInstruments.html">City of Bones</a>
+    </li>
+    <li>
+      <a href="EleanorPark.html">Eleanor &amp; Park</a>
+    </li>
+    <li>
+      <a href="HarryPotter.html">Harry Potter</a>
+    </li>
+    <li>
+      <a href="WordClouds.html">Perks of Being a Wallflower</a>
+    </li>
+    <li>
+      <a href="Tearling.html">Queen of the Tearling</a>
+    </li>
+    <li>
+      <a href="WrinkleTime.html">A Wrinkle in Time</a>
+    </li>
+    <li>
+      <a href="Dog.html">The Curious Incident of the Dog in the Night-Time</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Upcoming.html">Upcoming Pages</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Charlotte’s Web</h1>
+
+</div>
+
+
+<p>Author: E.B. White</p>
+<p><strong>“Trust me, Wilbur. People are very gullible. They’ll believe anything they see in print.”</strong></p>
+<p>― E.B. White, Charlotte’s Web</p>
+<div class="figure">
+<img src="Charlotte&#39;sWeb.jpg" />
+
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p><em>Some Pig. Humble. Radiant.</em> These are the words in Charlotte’s Web, high up in Zuckerman’s barn. Charlotte’s spiderweb tells of her feelings for a little pig named Wilbur, who simply wants a friend. They also express the love of a girl named Fern, who saved Wilbur’s life when he was born the runt of his litter.</p>
+<p>E. B. White’s Newbery Honor Book is a tender novel of friendship, love, life, and death that will continue to be enjoyed by generations to come. It contains illustrations by Garth Williams, the acclaimed illustrator of E.B. White’s Stuart Little and Laura Ingalls Wilder’s Little House series, among many other books.</p>
+<p><img src="CharlottesWeb_files/figure-html/thewordcloud-1.png" width="672" /></p>
+<pre><code>## [1] &quot;mzzcalirenee: Charlotte&#39;s Web: Untangling One of Colorado&#39;s Biggest Cannabis Success Stories  https://t.co/5gyoE8n4F0 via @denverwestword&quot;
+## [1] &quot;Danielle_Goss: Perfect! We are starting Charlotte&#39;s Web l on Monday as a read aloud https://t.co/lc3vupvnje&quot;
+## [1] &quot;QuantomBot: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;beaung: RT @nurseslabs: Charlotte&#39;s Web: How Marijuana Helped Stop a Child&#39;s Severe Seizures • Nurseslabs https://t.co/gVyOmeReFz&quot;
+## [1] &quot;nurseslabs: Charlotte&#39;s Web: How Marijuana Helped Stop a Child&#39;s Severe Seizures • Nurseslabs https://t.co/gVyOmeReFz&quot;
+## [1] &quot;avocadogators: RT @LaurenRhoadsl: We had such a blast at our Charlotte&#39;s Web Day!Literature came to life today in room 14!  @avocadogators @CajonValleyUSD…&quot;
+## [1] &quot;HavanaRama: \&quot;What is the name of the spider from Charlotte&#39;s Web? Wilbur?!\&quot; -@CNietoIII&quot;
+## [1] &quot;DavidJChard: RT @WheelockCollege: WFT features the best seller children&#39;s story by E.B White: Charlotte&#39;s Web. April 14th-May 14th https://t.co/CtyIfrEx…&quot;
+## [1] &quot;rom1dim: RT @Big_Twan: Relieve your anxiety, insomnia &amp;amp; pain w/ @CloudN9neSyrup w/ CBD from Charlotte&#39;s Web &amp;amp; ACDC strains &amp;amp; 9 highly concentrated n…&quot;
+## [1] &quot;topec04: Got in my car and fucking put my face right in Charlotte&#39;s Web. Dumb ass spider built a web in my drivers seat and I didn&#39;t see it \xed\xa0\xbd\xed\xb8\x91\xed\xa0\xbd\xed\xb5\xb7\xed\xa0\xbd\xed\xb5\xb8\xed\xa0\xbd\xed\xb0\xb7&quot;
+## [1] &quot;concertcodes: Presale Alert!  Charlotte’s Web Presale Tickets at Garde Arts Center in New London https://t.co/6WZaBxP9dk #presale&quot;
+## [1] &quot;EricStoffle: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;anythingsart: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;cdNJ732: @Willburr2009 @GregGutfeldShow @KatTimpf @mchooyah @kimguilfoyle @PlanetTyrus That&#39;s great WILLBURR! Hey, weren&#39;t y… https://t.co/ZAZUcbvZOd&quot;
+## [1] &quot;nautabotnews: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;snstreet: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;AsianProSource: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;TinaJac22661258: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;indiedevsunite: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;
+## [1] &quot;Waltika: RT @Steve_Games: #QuietDownAFilm Hush, Hush Sweet Charlotte&#39;s Web #SciFi #Amwriting #Amreading #Games #gamedev #indiedev #comics #NowPlayin…&quot;</code></pre>
+<p>```</p>
+</div>
+<div id="key-themes" class="section level2">
+<h2>Key Themes</h2>
+<ul>
+<li>bookstomovies</li>
+<li>classics</li>
+</ul>
+</div>
+<div id="extras" class="section level2">
+<h2>Extras</h2>
+<ul>
+<li>Time’s “100 Best Young Adult Books of All Time”<br />
+</li>
+<li>Newbery Honor<br />
+</li>
+<li>Oklahoma Sequoyah Book Award<br />
+</li>
+<li>Laura Ingalls Wilder Award (1970)</li>
+</ul>
+<hr />
+<p><small> <small></p>
+<p>summary from Goodreads</p>
+<p>extras from Barnes &amp; Noble</p>
+<p></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
