@@ -2,6 +2,10 @@
 title: "About <b>It's a Metaphor</b>"
 ---
 
+``` {r test, results='asis', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+print("<b>cinder</b> book")
+```
+
 It is easy to get stuck after reading a wonderful book. This website serves to show what people are saying about certain books on Twitter. 
 
 "It's a Metaphor" is dedicated to young adult books with a focus on the two "best young adult books" lists from Time magazine and NPR.
