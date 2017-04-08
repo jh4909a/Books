@@ -11,7 +11,7 @@
 
 
 
-<title>About It’s a Metaphor</title>
+<title>EleanorParkTweets</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -235,17 +235,15 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About <b>It’s a Metaphor</b></h1>
+<h1 class="title toc-ignore">EleanorParkTweets</h1>
 
 </div>
 
 
-<p>It is easy to get stuck after reading a wonderful book. This website serves to show what people are saying about certain books on Twitter.</p>
-<p>“It’s a Metaphor” is dedicated to young adult books with a focus on the two “best young adult books” lists from Time magazine and NPR.</p>
-<p>This website is made from R and uses codes to create wordclouds of the most used words in tweets that include the book title. It pulls tweets from the last two weeks and searches up to 3200 tweets.</p>
-<div class="figure">
-<img src="Alive.jpeg" />
-
+<div id="retrieve-tweets-from-twitter" class="section level2">
+<h2>retrieve tweets from Twitter</h2>
+<p>library(twitteR) library(ROAuth) ## Twitter authentication consumer_key &lt;- “qOvNAzHxL7i8R1AajYJZumw5M” consumer_secret &lt;- “1ETLwgpE6IKi8LW96Isp2wXuKFRDZSJ2F6tnRi2UWq29wAcaYt” access_token &lt;- “3011251745-xO3ltw0KN0WEyMMEvFTGqt04QTD3RILdcg91I4L” access_secret &lt;- “KrSa45CHZFSVUgUyFAnfkBYEQBJ8JX26A0ytTQ4r3atz9” setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret) ## 3200 is the maximum to retrieve tweets &lt;- userTimeline(“Eleanor &amp; Park”, n = 3200, lang=“en”) #Transform tweets list into a data frame tweets.df &lt;- twListToDF(tweets)</p>
+<p>tweets.df[3200, c(“id”, “created”, “screenName”, “replyToSN”, “favoriteCount”, “retweetCount”, “longitude”, “latitude”, “text”)]</p>
 </div>
 
 
