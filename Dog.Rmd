@@ -21,75 +21,75 @@ Although gifted with a superbly logical brain, for fifteen-year-old Christopher 
 
 
 <center>
-```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
-##### EDIT SEARCH PARAMETERS BELOW
-search_term <- "The Curious Incident of the Dog in the Night-Time+curious incident"  # For two terms use e.g. "eleanor+park"
-# For hashtags use e.g. "#eleanor+park"
-language <- "en"
-sample_size <- 3200 
-AU_geocode <- '38.9375300,-77.0868600,10mi'  # Latitude, Longitude, Radius
-# Here specifies 10 miles from AU campus
-since <- '2016-10-08'  # Election Day
-until <- '2016-11-08'  # INSERT Until Date, not used here
-##### EDIT SEARCH PARAMETERS ABOVE
-
-source('~/Documents/Spring2017/Books/Books/TwitterAuth.R')
-
-library(twitteR)
-library(tm)
-library(wordcloud)
-library(RColorBrewer)
-library(twitteR)
-
-####### EDIT THE NEXT LINE TO SPECIFY SEARCH
-tweets_raw = searchTwitter(search_term,
-                           n=sample_size,
-                           #geocode=AU_geocode,
-                           #since=since,
-                           #until=until,
-                           lang=language)
-####### EDIT THE PREVIOUS LINE TO SPECIFY SEARCH
-
-# NEXT TWO LINES REMOVES META-DATA THEN CONVERTS DATA TO A NEEDED FORMAT
-tweets_text = sapply(tweets_raw, function(x) x$getText())
-tweets_corpus = Corpus(VectorSource(tweets_text))
-
-# NEXT LINE REMOVES SPECIAL CHARACTERS AVAILABLE IN OTHER LANGUAGES
-tweets_transformed1 <- tm_map(tweets_corpus,
-                              content_transformer(function(x) iconv(x, to="UTF-8-MAC")),
-                              mc.cores=1)
-
-# NEXT LINE CONVERTS EVERYTHING TO LOWER CASE
-tweets_transformed2 <- tm_map(tweets_transformed1,
-                              content_transformer(tolower),
-                              mc.cores=1)
-# NEXT LINE REMOVES PUNCTUATION
-tweets_transformed3 <- tm_map(tweets_transformed2,
-                              removePunctuation,
-                              mc.cores=1)
-# NEXT LINE REMOVES "STOPWORDS" LIKE "THE", "AN", "IS", "BE", ETC.
-tweets_transformed4 <- tm_map(tweets_transformed3,
-                              function(x) removeWords(x,stopwords()),
-                              mc.cores=1)
-# NEXT LINE REMOVES words starting with "https"
-tweets_transformed5 <- tm_map(tweets_transformed4,
-                              function(x) removeWords(x,"http[^[:space:]]*"),mc.cores=1)
-
-
-###### EDIT NEXT LINE TO SPECIFY DRAWING OF WORD CLOUD
-wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
-```
+# ```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+# ##### EDIT SEARCH PARAMETERS BELOW
+# search_term <- "The Curious Incident of the Dog in the Night-Time+curious incident"  # For two terms use e.g. "eleanor+park"
+# # For hashtags use e.g. "#eleanor+park"
+# language <- "en"
+# sample_size <- 3200 
+# AU_geocode <- '38.9375300,-77.0868600,10mi'  # Latitude, Longitude, Radius
+# # Here specifies 10 miles from AU campus
+# since <- '2016-10-08'  # Election Day
+# until <- '2016-11-08'  # INSERT Until Date, not used here
+# ##### EDIT SEARCH PARAMETERS ABOVE
+# 
+# source('~/Documents/Spring2017/Books/Books/TwitterAuth.R')
+# 
+# library(twitteR)
+# library(tm)
+# library(wordcloud)
+# library(RColorBrewer)
+# library(twitteR)
+# 
+# ####### EDIT THE NEXT LINE TO SPECIFY SEARCH
+# tweets_raw = searchTwitter(search_term,
+#                            n=sample_size,
+#                            #geocode=AU_geocode,
+#                            #since=since,
+#                            #until=until,
+#                            lang=language)
+# ####### EDIT THE PREVIOUS LINE TO SPECIFY SEARCH
+# 
+# # NEXT TWO LINES REMOVES META-DATA THEN CONVERTS DATA TO A NEEDED FORMAT
+# tweets_text = sapply(tweets_raw, function(x) x$getText())
+# tweets_corpus = Corpus(VectorSource(tweets_text))
+# 
+# # NEXT LINE REMOVES SPECIAL CHARACTERS AVAILABLE IN OTHER LANGUAGES
+# tweets_transformed1 <- tm_map(tweets_corpus,
+#                               content_transformer(function(x) iconv(x, to="UTF-8-MAC")),
+#                               mc.cores=1)
+# 
+# # NEXT LINE CONVERTS EVERYTHING TO LOWER CASE
+# tweets_transformed2 <- tm_map(tweets_transformed1,
+#                               content_transformer(tolower),
+#                               mc.cores=1)
+# # NEXT LINE REMOVES PUNCTUATION
+# tweets_transformed3 <- tm_map(tweets_transformed2,
+#                               removePunctuation,
+#                               mc.cores=1)
+# # NEXT LINE REMOVES "STOPWORDS" LIKE "THE", "AN", "IS", "BE", ETC.
+# tweets_transformed4 <- tm_map(tweets_transformed3,
+#                               function(x) removeWords(x,stopwords()),
+#                               mc.cores=1)
+# # NEXT LINE REMOVES words starting with "https"
+# tweets_transformed5 <- tm_map(tweets_transformed4,
+#                               function(x) removeWords(x,"http[^[:space:]]*"),mc.cores=1)
+# 
+# 
+# ###### EDIT NEXT LINE TO SPECIFY DRAWING OF WORD CLOUD
+# wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
+# ```
 </center>
 
 ``` {r Tweets, message=FALSE, warning=FALSE, echo=FALSE, error=FALSE}
 
 # Run Twitter Search
 
-tweets <- searchTwitter("The Curious Incident of the Dog in the Night-Time+curious incident", n=3200, lang="en")
+#tweets <- searchTwitter("The Curious Incident of the Dog in the Night-Time+curious incident", n=3200, lang="en")
 
-for(i in 1:20){
-  print(tweets[[i]])
-}
+#for(i in 1:20){
+ # print(tweets[[i]])
+#}
 ```
 
 <center>
