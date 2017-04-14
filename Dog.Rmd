@@ -6,22 +6,21 @@ output:
 ---
 <center>
 
-Author: Mark Haddon
-
 **“Also, dogs are faithful and they do not tell lies because they cannot talk.”**
 
 ― Mark Haddon, The Curious Incident of the Dog in the Night-Time
 
-
-
-
 ![](Dog.jpeg)
 
+
 ## Summary
+</center>
 Christopher John Francis Boone knows all the countries of the world and their capitals and every prime number up to 7,057. He relates well to animals but has no understanding of human emotions. He cannot stand to be touched. And he detests the color yellow.
 
 Although gifted with a superbly logical brain, for fifteen-year-old Christopher everyday interactions and admonishments have little meaning. He lives on patterns, rules, and a diagram kept in his pocket. Then one day, a neighbor's dog, Wellington, is killed and his carefully constructive universe is threatened. Christopher sets out to solve the murder in the style of his favourite (logical) detective, Sherlock Holmes. What follows makes for a novel that is funny, poignant and fascinating in its portrayal of a person whose curse and blessing are a mind that perceives the world entirely literally.
 
+
+<center>
 ```{r thewordcloud, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 ##### EDIT SEARCH PARAMETERS BELOW
 search_term <- "The Curious Incident of the Dog in the Night-Time+curious incident"  # For two terms use e.g. "eleanor+park"
@@ -80,7 +79,7 @@ tweets_transformed5 <- tm_map(tweets_transformed4,
 ###### EDIT NEXT LINE TO SPECIFY DRAWING OF WORD CLOUD
 wordcloud(tweets_transformed5, random.order=FALSE, colors=brewer.pal(8,"Dark2"))
 ```
-
+</center>
 
 ``` {r Tweets, message=FALSE, warning=FALSE, echo=FALSE, error=FALSE}
 
@@ -93,6 +92,7 @@ for(i in 1:20){
 }
 ```
 
+<center>
 ```{r tweet map, message=FALSE, echo=FALSE, warning=FALSE}
 #tweets.df <- do.call("rbind",lapply(tweets,as.data.frame))
 
@@ -104,7 +104,7 @@ for(i in 1:20){
 #plots tweets
 #points(tweets.df$longitude,tweets.df$latitude, pch=20, cex=1, col="red")
 ```
-
+</center>
 
 ##Key Themes
 * autism
@@ -128,6 +128,7 @@ for(i in 1:20){
 * Washington Post's Best Fiction of 2003
 
 ***
+<center>
 <small> <small>  
 
 summary from Goodreads 
