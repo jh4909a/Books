@@ -1,0 +1,6 @@
+install.packages("rvest")
+library(rvest)
+html <- read_html ("http://www.sparknotes.com/lit/the-curious-incident-of-the-dog-in-the-night-time/facts.html")
+location <- html_nodes(html, "p:nth-child(14)")
+length(location)
+html_text(location)
