@@ -108,13 +108,13 @@ points(tweets.df$longitude,tweets.df$latitude, pch=20, cex=1, col="red")
 ```
 
 ```{r time spiral}
-library(plotly)
-packageVersion('plotly')
+#library(plotly)
+#packageVersion('plotly')
 
-p <- plot_ly(
-  plotly::tweets.df, r = ~latitude, t = ~longitude, color = ~nms, alpha = 0.5, type = "scatter"
-)
-layout(p, title = "Mic Patterns", orientation = -90)
+#p <- plot_ly(
+#  plotly::tweets.df, r = ~latitude, t = ~longitude, color = ~nms, alpha = 0.5, type = "scatter"
+#)
+#layout(p, title = "Mic Patterns", orientation = -90)
 ```
 
 ##Key Themes

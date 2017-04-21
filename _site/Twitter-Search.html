@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Twitter-Search</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">It's a Metaphor</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-gear"></span>
+     
+    Books
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="CharlottesWeb.html">Charlotte's Web</a>
+    </li>
+    <li>
+      <a href="cinder.html">Cinder</a>
+    </li>
+    <li>
+      <a href="MortalInstruments.html">City of Bones</a>
+    </li>
+    <li>
+      <a href="EleanorPark.html">Eleanor &amp; Park</a>
+    </li>
+    <li>
+      <a href="HarryPotter.html">Harry Potter</a>
+    </li>
+    <li>
+      <a href="WordClouds.html">Perks of Being a Wallflower</a>
+    </li>
+    <li>
+      <a href="Tearling.html">Queen of the Tearling</a>
+    </li>
+    <li>
+      <a href="WrinkleTime.html">A Wrinkle in Time</a>
+    </li>
+    <li>
+      <a href="Dog.html">The Curious Incident of the Dog in the Night-Time</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Upcoming.html">Upcoming Pages</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Twitter-Search</h1>
+
+</div>
+
+
+<pre class="r"><code>##### EDIT SEARCH PARAMETERS BELOW
+search_term &lt;- &quot;Perks+Wallflower&quot;
+language &lt;- &quot;en&quot;
+sample_size &lt;- 3200
+##### EDIT SEARCH PARAMETERS ABOVE
+
+source(&#39;TwitterAuth.R&#39;)</code></pre>
+<pre><code>## [1] &quot;Using direct authentication&quot;</code></pre>
+<pre class="r"><code># NEXT 4 LINES LOAD LIBRARIES OF FUNCTIONS
+library(twitteR)
+library(tm)</code></pre>
+<pre><code>## Loading required package: NLP</code></pre>
+<pre><code>## 
+## Attaching package: &#39;NLP&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:httr&#39;:
+## 
+##     content</code></pre>
+<pre class="r"><code>library(wordcloud)</code></pre>
+<pre><code>## Loading required package: RColorBrewer</code></pre>
+<pre class="r"><code>library(RColorBrewer)
+
+####### EDIT THE NEXT LINE TO SPECIFY SEARCH
+tweets_raw = searchTwitter(search_term, n=sample_size, lang=language)
+####### EDIT THE PREVIOUS LINE TO SPECIFY SEARCH
+
+############  CREATE DATA FRAME ##########################
+DF = twListToDF(tweets_raw) 
+# TO SAVE: write.csv(DF,file=&#39;mongodb_tweets.csv&#39;)
+# TO READ: DF &lt;- read.csv(file=&#39;mongodb_tweets.csv&#39;, sep=&#39;,&#39;, header=TRUE)
+##########################################################</code></pre>
+<div id="next-two-lines-removes-meta-data-then-converts-data-to-a-needed-format" class="section level1">
+<h1>NEXT TWO LINES REMOVES META-DATA THEN CONVERTS DATA TO A NEEDED FORMAT</h1>
+<p>tweets_text = sapply(tweets_raw, function(x) x$getText()) tweets_corpus = Corpus(VectorSource(tweets_text))</p>
+</div>
+<div id="next-line-removes-special-characters-available-in-other-languages" class="section level1">
+<h1>NEXT LINE REMOVES SPECIAL CHARACTERS AVAILABLE IN OTHER LANGUAGES</h1>
+<p>tweets_transformed1 &lt;- tm_map(tweets_corpus, content_transformer(function(x) iconv(x, to=“UTF-8”))) # NEXT LINE CONVERTS EVERYTHING TO LOWER CASE tweets_transformed2 &lt;- tm_map(tweets_transformed1, content_transformer(tolower)) # NEXT LINE REMOVES PUNCTUATION tweets_transformed3 &lt;- tm_map(tweets_transformed2, removePunctuation) # NEXT LINE REMOVES “STOPWORDS” LIKE “THE”, “AN”, “IS”, “BE”, ETC. tweets_transformed4 &lt;- tm_map(tweets_transformed3, function(x) removeWords(x,stopwords())) # NEXT LINE DRAWS WORD CLOUD wordcloud(tweets_transformed4)</p>
+</div>
+<div id="to-extract-a-vector-of-time-differences" class="section level1">
+<h1>TO EXTRACT A VECTOR OF TIME DIFFERENCES</h1>
+</div>
+<div id="use-package-lubridate" class="section level1">
+<h1>USE PACKAGE lubridate</h1>
+</div>
+<div id="put-this-into-a-loop-dti-yms_hmsdfcreated1---yms_hmsdfcreatedi" class="section level1">
+<h1>PUT THIS INTO A LOOP: dt[i] = yms_hms(DF<span class="math inline">\(created[1]) - yms_hms(DF\)</span>created[i])</h1>
+</div>
+<div id="dont-forget-to-initialize-dt" class="section level1">
+<h1>Don’t forget to initialize dt</h1>
+</div>
+<div id="find-a-way-to-plot-data-based-on-what-we-have-been-doing-for-the-last-several-classes." class="section level1">
+<h1>FIND A WAY TO PLOT DATA, based on what we have been doing for the last several classes.</h1>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
