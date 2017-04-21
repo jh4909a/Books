@@ -16,7 +16,6 @@ layout(p, title = "Mic Patterns", orientation = -90)
 
 
 
-
-
-
 ```
+
+~r, ~t, ~nms is which columns you are pulling from
