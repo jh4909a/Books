@@ -70,24 +70,12 @@ for (i in 1:nrow(DF)) {
 
 r <- dtime
 theta <- r%%1*360
-tweettimes = data.frame(r=r,t=theta,rtc=DF$retweet)
+tweettimes = data.frame(r=r,t=theta)
 p <- plot_ly(
   #plotly::hobbs, r = ~r, t = ~t, color = ~nms, alpha = 0.5, type = "scatter"
-  tweettimes, r=~r, t=~t, alpha=0.5, type="scatter", 
+  tweettimes, r=~r, t=~t, alpha=0.5, type="scatter" 
 )
 
 layout(p, title = "Hobbs-Pearson Trials", plot_bgcolor = toRGB("grey90"))
 ```
 
-
-```{r clock}
-
-
-
-
-
-
-
-
-
-```
