@@ -107,7 +107,7 @@ map('world')
 points(tweets.df$longitude,tweets.df$latitude, pch=20, cex=1, col="red")
 ```
 
-```{r time spiral}
+```{r time spiral, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 library(plotly)
 library(lubridate)
 
