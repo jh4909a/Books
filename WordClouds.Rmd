@@ -115,6 +115,10 @@ This spiral graph shows when the tweets were sent out within the last seven days
 library(plotly)
 library(lubridate)
 
+####### EDIT THE NEXT LINE TO SPECIFY SEARCH
+tweets_raw = searchTwitter(search_term, n=sample_size, lang=language)
+####### EDIT THE PREVIOUS LINE TO SPECIFY SEARCH
+
 DF = twListToDF(tweets_raw) 
 # TO SAVE: 
 write.csv(DF,file='wallflower_tweets.csv')
