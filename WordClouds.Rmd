@@ -111,18 +111,12 @@ points(tweets.df$longitude,tweets.df$latitude, pch=20, cex=1, col="red")
 ##Recent Tweets
 This spiral graph shows when the tweets were sent out within the last seven days. Each circle represents a new day. Starting with the first tweet in the middle. R is day. T is hour of the day. The graph is similar to a clock, but based on the first tweet. The first tweet is the midnight of the clock. A tweet at 6 am on this clock is 6 hours after the first tweet was posted. 
 
-```{r time spiral}
+```{r time spiral, echo=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
 library(lubridate)
 
-####### EDIT THE NEXT LINE TO SPECIFY SEARCH
-tweets_raw = searchTwitter(search_term, n=sample_size, lang=language)
-####### EDIT THE PREVIOUS LINE TO SPECIFY SEARCH
-
-############  CREATE DATA FRAME ##########################
 DF = twListToDF(tweets_raw) 
-
-# TO SAVE:
+# TO SAVE: 
 write.csv(DF,file='wallflower_tweets.csv')
 
 DF <- read.csv(file='wallflower_tweets.csv', sep=',', header=TRUE)
@@ -136,7 +130,7 @@ theta <- r%%1*360
 tweettimes = data.frame(r=r,t=theta)
 p <- plot_ly(
   #plotly::hobbs, r = ~r, t = ~t, color = ~nms, alpha = 0.5, type = "scatter"
-  tweettimes, r=~r, t=~t, alpha=0.5, type="scatter" 
+  tweettimes, r=~r, t=~t, alpha=0.5, type="scatter"
 )
 
 layout(p, title = "Hobbs-Pearson Trials", plot_bgcolor = toRGB("grey90"))
