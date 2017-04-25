@@ -107,7 +107,11 @@ map('world')
 points(tweets.df$longitude,tweets.df$latitude, pch=20, cex=1, col="red")
 ```
 
-```{r time spiral, results='hide', echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+
+##Recent Tweets
+This spiral graph shows when the tweets were sent out within the last seven days. Each circle represents a new day. Starting with the first tweet in the middle. R is day. T is hour of the day. The graph is similar to a clock, but based on the first tweet. The first tweet is the midnight of the clock. A tweet at 6 am on this clock is 6 hours after the first tweet was posted. 
+
+```{r time spiral, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 library(plotly)
 library(lubridate)
 
